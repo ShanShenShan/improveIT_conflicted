@@ -1,0 +1,86 @@
+{
+	"files": [
+
+	],
+	"folders": {
+		"Characters": {
+			"files": [
+				"character-1722951024.json",
+				"character-1721952703.json",
+				"character-1721952113.json",
+				"character-1721724551.json",
+				"character-1720150982.json"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Definitions": {
+			"files": [
+
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Themes": {
+			"files": [
+				"theme-1721953720.cfg",
+				"theme-1721781230.cfg",
+				"theme-1718855012.cfg",
+				"theme-1717764707.cfg"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Timelines": {
+			"files": [
+				"timeline-1720150872.json",
+				"timeline-1718871577.json",
+				"timeline-1718854892.json"
+			],
+			"folders": {
+				"Merrick": {
+					"files": [
+						"timeline-1721950864.json",
+						"timeline-1721976689.json",
+						"timeline-1722605060.json",
+						"timeline-1722652973.json",
+						"timeline-1722653052.json",
+						"timeline-1722927703.json",
+						"timeline-1722927847.json",
+						"timeline-1722927941.json",
+						"timeline-1722928007.json",
+						"timeline-1722950685.json",
+						"timeline-1722950750.json",
+						"timeline-1722950878.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		}
+	}
+}
