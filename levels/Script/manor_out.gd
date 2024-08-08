@@ -9,7 +9,7 @@ onready var player =$objects/Player
 onready var player_controls = $objects/Player/Controller
 onready var interaction_button1 = $objects/people/knight/TextureButton
 
-var current_map = "res://levels/manorout.tscn"
+var current_map = "res://levels/manor_out.tscn"
 var starting_player_position = Vector2 (528, 395)
 
 # Called when the node enters the scene tree for the first time.
@@ -64,13 +64,13 @@ func _on_pause_game_pressed():
 
 func knight_dialogue():
 	player_controls.visible = false
+	interaction_button1.visible = false
 	var new_dialog = Dialogic.start('manor_guard')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "after_knight")
 
 func after_knight(timelinename):
 	player_controls.visible = true
-	interaction_button1.visible = false
-	Global2.manor_knight = true
+	interaction_button1.visible = true
 
 

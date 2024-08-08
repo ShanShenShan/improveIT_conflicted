@@ -1,0 +1,80 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you done exploring the city?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "1723097011-648",
+			"event_id": "dialogic_011",
+			"value": "3"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good! now lets review what I taught you earlier."
+		},
+		{
+			"emit_signal": "review_signal",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Make sure to communicate with other people to get information. As of now [explore_town] out of 3 places you already knew."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1723096670.json",
+		"name": "stage2"
+	}
+}

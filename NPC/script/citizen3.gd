@@ -82,7 +82,7 @@ func pick_random_state(state_list):
 
 
 func _on_Area2D_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	if Global2.badge1 == true && Global2.citizen3 == false:
+	if Global2.stage2_trigger == true:
 		dialogue_button.visible = true
 		#print(Global.stage1)
 	else:

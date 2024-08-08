@@ -70,6 +70,5 @@ func citizen_dialogue():
 
 func after_citizen3(timelinename):
 	player_controls.visible = true
-	interaction_button1.visible = false
-	Global2.citizen3 = true
+
 

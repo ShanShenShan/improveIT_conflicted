@@ -30,9 +30,7 @@ func save_game():
 		"stage2_trigger": Global2.stage2_trigger,
 		"stage3_trigger": Global2.stage3_trigger,
 		#quest
-		"paladin": Global2.paladin,
-		"citizen3": Global2.citizen3,
-		"manor_knight": Global2.manor_knight
+		"explore_town": Global2.explore_town
 		
 		
 	}
@@ -88,9 +86,8 @@ func load_game() -> void:
 		Global2.stage3_trigger = loaded_data["stage3_trigger"]
 		
 		#Quest
-		Global2.paladin = loaded_data["paladin"]
-		Global2.citizen3 = loaded_data["citizen3"]
-		Global2.manor_knight = loaded_data["manor_knight"]
+		Global2.explore_town = int(loaded_data["explore_town"])
+		
 		
 		# player positions
 		Global.set_player_current_position(Vector2(loaded_data["player_current_position"][0], loaded_data["player_current_position"][1]))

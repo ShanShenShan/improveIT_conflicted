@@ -4,13 +4,11 @@ extends Node
 var badge1 = false
 var badge2 = false
 
-#paladin show dialogue
-var paladin = false
-var citizen3 = false
-var manor_knight = false
+#quest
+var explore_town = 0
 
-#levels
-var stage2_trigger = false
+#levels UI triger cange
+var stage2_trigger = true
 var stage3_trigger = false
 
 #Stage completion trigger

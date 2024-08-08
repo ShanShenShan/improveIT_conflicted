@@ -1,3 +1,4 @@
+
 extends Control
 
 signal textbox_closed  # Signal emitted when the textbox is closed
@@ -65,10 +66,10 @@ func enemy_dialogue(first_d, second_d, feedback):
 
 func next_question(question):
 	if stats.health == 5:
-		# increase player health and play the shake animation
+		# don't increase the health
 		stats.health = max(0, stats.health + 0)
 	else:
-		# increase player health and play the shake animation
+		# increase the health bu one
 		stats.health = max(0, stats.health + 1)
 	question_text.text = question
 
@@ -116,14 +117,20 @@ func _on_inbox_pressed():
 
 # Handle the action when the index button is pressed
 func _on_index_pressed():
+	
 	Global2.stage2_complete = true
 	Global2.badge2 = true
 	Global2.stage2_trigger = false
 	Global2.stage3_trigger = true
 	Global.player_position_retain = true
-	
-	feedback("Correct!", "Exactly! now you completely understand what ListKey Magic", "Think of an index as a marker that tells you the exact position of an item within a ListKey.", true)
 
+	feedback("Correct!", "Exactly! now you completely understand what ListKey Magic", "Think of an index as a marker that tells you the exact position of an item within a ListKey.", true)
+	if stats.health == 5:
+		# don't increase the health
+		stats.health = max(0, stats.health + 0)
+	else:
+		# increase the health bu one
+		stats.health = max(0, stats.health + 1)
 # Handle the action when the indoors button is pressed
 func _on_indoors_pressed():
 	enemy_dialogue("Haha! Are you kidding me?", "Now I knew you never listened to me", "Yup, we used ListKey Magic to unlock doors but INDOORS is not the right term")

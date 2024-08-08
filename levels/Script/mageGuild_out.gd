@@ -74,6 +74,4 @@ func paladin_dialogue():
 
 func after_paladin(timelinename):
 	player_controls.visible = true
-	interaction_button1.visible = false
-	interaction_button2.visible = false
-	Global2.paladin = true
+
