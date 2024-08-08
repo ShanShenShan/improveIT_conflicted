@@ -54,10 +54,26 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/paladin1/paladin1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1723102784.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Boy, Before you enter into this building. I would like to tell you that this is the mage guild. Remeber to act right to be respected."
+			"text": "Boy, Before you enter into this building. I would like to tell you that this is the mage guild. Remember to act right to be respected."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/paladin1/paladin1d2.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -66,10 +82,18 @@
 			"text": "Thank you for that information. "
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/paladin1/paladin1d3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Now I know [explore_town] out 3 part of this town"
+			"text": "Now I know [explore_town] out 3 parts of this town"
 		},
 		{
 			"event_id": "dialogic_022",
@@ -103,16 +127,32 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/paladin1/paladin1d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1723102784.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Huh? This was the Mage guild. Why are you asking me something that you already knew?"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d7.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh yeah, sorry I forgot.  This was the [explore_town] out of 3 places I need to look at."
+			"text": "Oh yeah, sorry I forgot.  (This was the [explore_town] out of 3 places I need to look at)"
 		},
 		{
 			"event_id": "dialogic_022",

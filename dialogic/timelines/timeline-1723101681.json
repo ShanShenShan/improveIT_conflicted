@@ -22,10 +22,23 @@
 			"z_index": 0
 		},
 		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
+		},
+		{
 			"condition": "",
 			"definition": "1723102204-573",
 			"event_id": "dialogic_012",
 			"value": "0"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d1.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1723101616.json",
@@ -44,10 +57,18 @@
 			"value": ""
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I'm currently exploring this town. What was the name of this place?"
+			"text": "I'm currently exploring this town. What is the name of this place?"
 		},
 		{
 			"condition": "<",
@@ -72,10 +93,26 @@
 			"set_value": "1"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d3.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1723101616.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I don't have any obligation to answer your question. All I can say is this was a private property."
+			"text": "I don't have any obligation to answer your question. All I can say is that this is a private property."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d4.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
@@ -105,10 +142,18 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d5.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952703.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "This was the [explore_town] out of 3 places I need to look at."
+			"text": "This was the [explore_town] out of 3 places I needed to look at."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -156,10 +201,26 @@
 			"z_index": 0
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1723101616.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Don't pull out some jokes on me kid, I already told you that this was a private property right?"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/manorGuard1/g1d7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952703.json",
