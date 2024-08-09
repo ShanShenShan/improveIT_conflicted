@@ -75,14 +75,10 @@ func after_tutorial_headings(timelinename):
 func merrick2():
 	player_controls.visible = false
 	interaction_button.visible = false
+	Global.set_map(current_map)
 	var new_dialog = Dialogic.start('stage2')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "after_question_no")
-	new_dialog.connect("dialogic_signal", self, "after_question_yes")
-
-func after_question_yes(review_signal):
-	if review_signal == "review_signal":
-		SceneTransition.change_scene("res://Battlescenes/stage2_list.tscn")
 
 func after_question_no(timelineend):
 	player_controls.visible = true

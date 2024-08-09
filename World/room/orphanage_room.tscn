@@ -779,7 +779,6 @@ tile_data = PoolIntArray( 262148, 4, 0, 524292, 4, 0 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 8 )]
 position = Vector2( 42, 44 )
-collision_layer = 2
 
 [node name="children" type="YSort" parent="YSort"]
 

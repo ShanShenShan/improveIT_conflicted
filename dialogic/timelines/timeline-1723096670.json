@@ -46,7 +46,7 @@
 		{
 			"choice": "Yes",
 			"condition": "",
-			"definition": "",
+			"definition": "1723097011-648",
 			"event_id": "dialogic_011",
 			"value": "3"
 		},
@@ -65,8 +65,8 @@
 			"text": "Good! now lets review what I taught you earlier."
 		},
 		{
-			"emit_signal": "review_signal",
-			"event_id": "dialogic_040"
+			"change_scene": "res://Battlescenes/stage2_list.tscn",
+			"event_id": "dialogic_041"
 		},
 		{
 			"event_id": "dialogic_022",
