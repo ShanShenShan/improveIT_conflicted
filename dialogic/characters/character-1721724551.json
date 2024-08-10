@@ -9,13 +9,13 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": -30,
-	"offset_y": 30,
+	"offset_y": 0,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Dialogue/Picture/silhoutte/child.png"
+			"path": "res://Dialogue/Picture/paladin/child.png"
 		}
 	],
-	"scale": 80,
-	"theme": "theme-1721781230.cfg"
+	"scale": 22,
+	"theme": "theme-1723097669.cfg"
 }

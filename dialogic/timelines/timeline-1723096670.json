@@ -1,9 +1,15 @@
 {
 	"events": [
 		{
+			"condition": "",
+			"definition": "1723190522-787",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
 			"animation": "1-fade_in.gd",
-			"animation_length": 0,
-			"animation_wait": false,
+			"animation_length": 1,
+			"animation_wait": true,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1721952113.json",
@@ -65,6 +71,14 @@
 			"text": "Good! now lets review what I taught you earlier."
 		},
 		{
+			"definition": "1723190522-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"change_scene": "res://Battlescenes/stage2_list.tscn",
 			"event_id": "dialogic_041"
 		},
@@ -96,6 +110,208 @@
 		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
+			"definition": "1723190522-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"background": "res://Scenes/pictures/stage2/office_list.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Have you seen this syntax formulei before? This is the Listkey Magic Right? Let me cast another one."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1723253747",
+			"index": 0,
+			"name": "two_list"
+		},
+		{
+			"background": "res://Scenes/pictures/stage2/office_2list.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1723254206.cfg"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Now, Did you notice the difference between this two?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"background": "res://Scenes/pictures/orphanage/office.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Okay what is it?"
+		},
+		{
+			"choice": "1.) List and IList",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1723259235",
+			"index": 0,
+			"name": "List_dif_Ilist"
+		},
+		{
+			"background": "res://Scenes/pictures/stage2/office_list.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good, When we are using LIST to create LisKey Magic it means we are using specific key to unlock a various object."
+		},
+		{
+			"background": "res://Scenes/pictures/stage2/Ilist_solo.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Meanwhile, When we are using IList as ListKey Magic. It means we are using Universal Key. Not a specific one."
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That's why it is much appropriate to use this IList formulei to unlock chest or doors. "
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Did you get it?"
+		},
+		{
+			"choice": "1.) Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_timeline": "timeline-1722605060.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"choice": "2.) Can you repeat it again?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1723259235",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "2.) Can you cast it again?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1723253747",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Nope",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let me Highlighted the difference"
+		},
+		{
+			"background": "res://Scenes/pictures/stage2/list higlioghts.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "character-1721952113.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Check the syntax formulei Valen."
+		},
+		{
+			"anchor_id": "anchor-1723253747",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"

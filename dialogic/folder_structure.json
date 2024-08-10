@@ -24,13 +24,25 @@
 		},
 		"Definitions": {
 			"files": [
+				"1723187790-648",
 				"1723102985-768",
 				"1723102204-573",
 				"1723097830-905",
 				"1723097011-648"
 			],
 			"folders": {
+				"stage2": {
+					"files": [
+						"1723190522-787"
+					],
+					"folders": {
 
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
@@ -39,6 +51,7 @@
 		},
 		"Themes": {
 			"files": [
+				"theme-1723254206.cfg",
 				"theme-1723097669.cfg",
 				"theme-1721953720.cfg",
 				"theme-1721781230.cfg",
@@ -69,7 +82,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"Merrick": {
@@ -117,7 +130,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				}
 			},

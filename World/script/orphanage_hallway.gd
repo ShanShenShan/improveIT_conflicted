@@ -93,3 +93,8 @@ func after_dialog(timelinename):
 	player_controls.visible = true
 	interaction_button.visible = true
 	get_tree().paused = false
+	# Remove the dialog from the scene tree
+	var dialog = get_child(get_child_count() - 1) # Assuming the dialog is the last added child
+	if dialog:
+		dialog.queue_free() # This will remove the dialog node
+

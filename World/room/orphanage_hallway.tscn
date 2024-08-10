@@ -489,7 +489,7 @@ frame = 40
 position = Vector2( 299, 101 )
 
 [node name="child_boy4" parent="YSort" instance=ExtResource( 9 )]
-position = Vector2( 222, 74 )
+position = Vector2( 144, 102 )
 __meta__ = {
 "_edit_group_": true
 }

@@ -75,6 +75,7 @@ func after_tutorial_headings(timelinename):
 func merrick2():
 	player_controls.visible = false
 	interaction_button.visible = false
+	
 	Global.set_map(current_map)
 	var new_dialog = Dialogic.start('stage2')
 	add_child(new_dialog)

@@ -86,10 +86,8 @@ func pick_random_state(state_list):
 
 #dialgoue diameter
 func _on_dialogue_area_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
-	if Global2.badge1 == false:
-		interaction_button.visible = true
-	else:
-		interaction_button.visible = false
+	interaction_button.visible = true
+
 func _on_dialogue_area_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
 	interaction_button.visible = false
 

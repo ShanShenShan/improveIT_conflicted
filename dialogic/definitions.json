@@ -32,6 +32,18 @@
 			"name": "explore_town",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1723187790-648",
+			"name": "child_tips",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1723190522-787",
+			"name": "after_quiz",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }

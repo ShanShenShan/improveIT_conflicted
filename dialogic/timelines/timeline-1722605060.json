@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Scenes/pictures/stage1/orphanage_basement.jpg",
+			"background": "res://Scenes/pictures/orphanage/office.png",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -38,27 +38,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Excellent! You’re a quick learner. You have a talent for this line of work"
-		},
-		{
-			"animation": "1-fade_in.gd",
-			"animation_length": 1,
-			"animation_wait": true,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": true
-			},
-			"type": 0,
-			"z_index": 0
 		},
 		{
 			"audio": "play",
