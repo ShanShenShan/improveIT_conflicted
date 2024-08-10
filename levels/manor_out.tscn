@@ -7,7 +7,7 @@
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Tree2.tscn" type="PackedScene" id=7]
-[ext_resource path="res://World/fountain.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Founrtain_no_light.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/room/levels_entrance.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=10]
 [ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=11]
@@ -980,14 +980,14 @@ position = Vector2( 15, 284 )
 [node name="Tree2" parent="objects/props" instance=ExtResource( 7 )]
 position = Vector2( 490, 56 )
 
-[node name="fountain" parent="objects/props" instance=ExtResource( 8 )]
+[node name="Founrtain_no_light" parent="objects/props" instance=ExtResource( 8 )]
+position = Vector2( 152, 372 )
+
+[node name="Founrtain_no_light2" parent="objects/props" instance=ExtResource( 8 )]
+position = Vector2( 379, 372 )
+
+[node name="Founrtain_no_light3" parent="objects/props" instance=ExtResource( 8 )]
 position = Vector2( 264, 62 )
-
-[node name="fountain2" parent="objects/props" instance=ExtResource( 8 )]
-position = Vector2( 154, 370 )
-
-[node name="fountain3" parent="objects/props" instance=ExtResource( 8 )]
-position = Vector2( 379, 371 )
 
 [node name="tree border" type="YSort" parent="objects"]
 

@@ -1,13 +1,13 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://World/guildCastle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/pictures/atlas_16x.png" type="Texture" id=2]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=4]
 [ext_resource path="res://World/pictures/town/tiles/floor-tiles.png" type="Texture" id=5]
-[ext_resource path="res://World/Founrtain_no_light.tscn" type="PackedScene" id=6]
-[ext_resource path="res://World/statue_Wizard_no_light.tscn" type="PackedScene" id=7]
-[ext_resource path="res://World/street_lamp.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/fountain.tscn" type="PackedScene" id=6]
+[ext_resource path="res://World/statueWizKing.tscn" type="PackedScene" id=7]
+[ext_resource path="res://World/Street_lamp_night.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/pictures/town/other.png" type="Texture" id=9]
 [ext_resource path="res://World/pictures/town/flower fence.png" type="Texture" id=10]
 [ext_resource path="res://World/pictures/FREE_FantasyOverflow_tileset_16x16.png" type="Texture" id=11]
@@ -15,17 +15,10 @@
 [ext_resource path="res://World/world objects/treeMini.tscn" type="PackedScene" id=13]
 [ext_resource path="res://World/pictures/Solaria Demo Update 01.png" type="Texture" id=14]
 [ext_resource path="res://intro/Label.tscn" type="PackedScene" id=15]
-[ext_resource path="res://World/room/levels_entrance.tscn" type="PackedScene" id=16]
+[ext_resource path="res://levels/Script/mageGuild_out_night.gd" type="Script" id=16]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=17]
 [ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=18]
-[ext_resource path="res://levels/Script/mageGuild_out.gd" type="Script" id=19]
 [ext_resource path="res://intro/picture/pause.png" type="Texture" id=20]
-[ext_resource path="res://NPC/priest.tscn" type="PackedScene" id=21]
-[ext_resource path="res://NPC/Nun.tscn" type="PackedScene" id=22]
-[ext_resource path="res://NPC/townfolks_women.tscn" type="PackedScene" id=23]
-[ext_resource path="res://NPC/citizen.tscn" type="PackedScene" id=24]
-[ext_resource path="res://NPC/citizen3.tscn" type="PackedScene" id=25]
-[ext_resource path="res://NPC/paladin.tscn" type="PackedScene" id=27]
 
 [sub_resource type="ConvexPolygonShape2D" id=20]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 12, 0, 12 )
@@ -466,7 +459,7 @@ points = PoolVector2Array( 14.0382, 0.120865, 13.9036, 10.8879, 2.32904, 9.94577
 12/z_index = 0
 
 [node name="mageGuild_out" type="Node2D"]
-script = ExtResource( 19 )
+script = ExtResource( 16 )
 
 [node name="base" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -511,89 +504,58 @@ visible = false
 
 [node name="people" type="YSort" parent="objects"]
 
-[node name="priest" parent="objects/people" instance=ExtResource( 21 )]
-position = Vector2( 616, 510 )
-
-[node name="Nun" parent="objects/people" instance=ExtResource( 22 )]
-position = Vector2( 645, 553 )
-
-[node name="Nun2" parent="objects/people" instance=ExtResource( 22 )]
-position = Vector2( 574, 551 )
-
-[node name="townfolks_women" parent="objects/people" instance=ExtResource( 23 )]
-position = Vector2( 441, 464 )
-
-[node name="citizen" parent="objects/people" instance=ExtResource( 24 )]
-position = Vector2( 567, 365 )
-
-[node name="citizen3" parent="objects/people" instance=ExtResource( 25 )]
-position = Vector2( 240, 346 )
-
-[node name="paladin" parent="objects/people" instance=ExtResource( 27 )]
-position = Vector2( 339, 273 )
-
-[node name="paladin2" parent="objects/people" instance=ExtResource( 27 )]
-position = Vector2( 430, 272 )
-
 [node name="objects" type="YSort" parent="objects"]
 
-[node name="street_lamp" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 243, 370 )
+[node name="fountain" parent="objects/objects" instance=ExtResource( 6 )]
+position = Vector2( 160, 312 )
 
-[node name="street_lamp5" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 66, 447 )
-
-[node name="street_lamp6" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 66, 368 )
-
-[node name="street_lamp2" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 243, 447 )
-
-[node name="street_lamp7" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 525, 447 )
-
-[node name="street_lamp13" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 435, 516 )
-
-[node name="street_lamp15" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 435, 320 )
-
-[node name="street_lamp16" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 331, 320 )
-
-[node name="street_lamp14" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 331, 516 )
-
-[node name="street_lamp11" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 704, 368 )
-
-[node name="street_lamp12" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 704, 448 )
-
-[node name="street_lamp9" parent="objects/objects" instance=ExtResource( 8 )]
-position = Vector2( 525, 368 )
-
-[node name="statue_Wizard_no_light" parent="objects/objects" instance=ExtResource( 7 )]
-position = Vector2( 384, 399 )
-
-[node name="Founrtain_no_light" parent="objects/objects" instance=ExtResource( 6 )]
-position = Vector2( 159, 312 )
-
-[node name="Founrtain_no_light2" parent="objects/objects" instance=ExtResource( 6 )]
+[node name="fountain2" parent="objects/objects" instance=ExtResource( 6 )]
 position = Vector2( 608, 312 )
+
+[node name="statue" parent="objects/objects" instance=ExtResource( 7 )]
+position = Vector2( 384, 400 )
+
+[node name="Street_lamp_night" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 331, 519 )
+
+[node name="Street_lamp_night2" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 435, 519 )
+
+[node name="Street_lamp_night3" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 243, 449 )
+
+[node name="Street_lamp_night4" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 525, 449 )
+
+[node name="Street_lamp_night5" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 704, 450 )
+
+[node name="Street_lamp_night6" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 701, 371 )
+
+[node name="Street_lamp_night7" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 525, 371 )
+
+[node name="Street_lamp_night8" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 435, 322 )
+
+[node name="Street_lamp_night9" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 331, 323 )
+
+[node name="Street_lamp_night10" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 243, 373 )
+
+[node name="Street_lamp_night11" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 66, 371 )
+
+[node name="Street_lamp_night12" parent="objects/objects" instance=ExtResource( 8 )]
+position = Vector2( 66, 451 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 384, 347 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
 position = Vector2( 768, 608 )
-
-[node name="towncenter" parent="." instance=ExtResource( 16 )]
-position = Vector2( 384, 606 )
-rotation = 1.57079
-
-[node name="towncenter_pos" type="Position2D" parent="."]
-position = Vector2( 383, 590 )
 
 [node name="TopUi" type="CanvasLayer" parent="."]
 
@@ -618,12 +580,8 @@ margin_bottom = 40.0
 
 [node name="Label" parent="TopUi" instance=ExtResource( 15 )]
 
-[node name="mageGuild_1stFloor" parent="." instance=ExtResource( 16 )]
-position = Vector2( 384, 258 )
-rotation = 1.57079
-
-[node name="mageGuild_1stFloor_pos" type="Position2D" parent="."]
-position = Vector2( 382, 279 )
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.160784, 0.145098, 0.145098, 1 )
 
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 

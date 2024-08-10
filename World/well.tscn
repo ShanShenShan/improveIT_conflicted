@@ -15,9 +15,9 @@ texture = ExtResource( 1 )
 hframes = 3
 vframes = 3
 frame = 3
+region_rect = Rect2( 1, 62, 74, 69 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 7, 14 )
 rotation = 1.55728
-scale = Vector2( 1, 1 )
 shape = SubResource( 1 )

@@ -7,7 +7,7 @@
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 184, 8, 146, 94 )
+region_rect = Rect2( 184, 14, 146, 88 )
 region_filter_clip = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
