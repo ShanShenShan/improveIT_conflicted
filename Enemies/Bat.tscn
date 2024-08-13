@@ -101,7 +101,7 @@ script = ExtResource( 4 )
 material = SubResource( 14 )
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 2
+frame = 3
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -146,6 +146,7 @@ shape = SubResource( 11 )
 [node name="WanderController" parent="." instance=ExtResource( 9 )]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Stop"
 anims/Start = SubResource( 12 )
 anims/Stop = SubResource( 13 )
 

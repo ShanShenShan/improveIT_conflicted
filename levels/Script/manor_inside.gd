@@ -7,7 +7,7 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var current_level = $TopUi/Label
 onready var player = $YSort/Player
 onready var player_controls = $YSort/Player/Controller
-var current_map = "res://levels/manor_inside.gd"
+var current_map = "res://levels/stage_3_night/manor_inside_night.tscn"
 
 var starting_player_position = Vector2 (568, 428)
 

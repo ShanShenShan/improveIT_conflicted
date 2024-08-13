@@ -52,9 +52,9 @@
 		{
 			"choice": "Yes",
 			"condition": "",
-			"definition": "",
+			"definition": "1723097011-648",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "3"
 		},
 		{
 			"audio": "play",

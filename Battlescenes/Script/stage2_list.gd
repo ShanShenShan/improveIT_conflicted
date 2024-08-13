@@ -85,7 +85,9 @@ func feedback(first_d, second_d, feedback, change_scene_on_feedback=false):
 	yield(self, "textbox_closed")
 	q_and_a_show()  # Show Q&A panel again
 	if change_scene_on_feedback:
-		call_deferred("change_scene", "res://intro/Evaluation.tscn")
+		var new_dialog = Dialogic.start('evaluation')
+		add_child(new_dialog)
+		new_dialog.connect("timeline_end", self, "end")
 
 func change_scene(scene_path):
 	var result = get_tree().change_scene(scene_path)

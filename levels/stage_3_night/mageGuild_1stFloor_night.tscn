@@ -8,14 +8,13 @@
 [ext_resource path="res://World/world objects/mageGuild_Decor.tres" type="TileSet" id=6]
 [ext_resource path="res://intro/picture/pause.png" type="Texture" id=7]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=8]
-[ext_resource path="res://levels/Script/mageGuild_1stFloor.gd" type="Script" id=9]
+[ext_resource path="res://levels/Script/mageGuild_1stFloor_night.gd" type="Script" id=9]
 [ext_resource path="res://intro/Label.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Player/KinematicBody2D.tscn" type="PackedScene" id=11]
 [ext_resource path="res://World/world objects/table_wood1.tscn" type="PackedScene" id=12]
-[ext_resource path="res://World/room/levels_entrance.tscn" type="PackedScene" id=13]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=14]
 [ext_resource path="res://intro/pause_menu.tscn" type="PackedScene" id=15]
-[ext_resource path="res://NPC/paladin.tscn" type="PackedScene" id=16]
+[ext_resource path="res://World/ligthing/light.png" type="Texture" id=16]
 [ext_resource path="res://NPC/bard.tscn" type="PackedScene" id=17]
 [ext_resource path="res://NPC/mage_female.tscn" type="PackedScene" id=18]
 [ext_resource path="res://NPC/healer_female.tscn" type="PackedScene" id=19]
@@ -33,6 +32,7 @@
 [ext_resource path="res://NPC/king.tscn" type="PackedScene" id=31]
 [ext_resource path="res://World/world objects/table_wood2.tscn" type="PackedScene" id=32]
 [ext_resource path="res://World/world objects/bookshelf_wood1.tscn" type="PackedScene" id=33]
+[ext_resource path="res://World/room/night_level_entrance.tscn" type="PackedScene" id=34]
 
 [sub_resource type="TileSet" id=1]
 1/name = "16x16Room_Builder_free.png 1"
@@ -698,7 +698,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 3/shapes = [  ]
 3/z_index = 0
 
-[node name="mageGuild_1stFloor" type="Node2D"]
+[node name="mageGuild_1stFloor_night" type="Node2D"]
 script = ExtResource( 9 )
 
 [node name="Floor1" type="TileMap" parent="."]
@@ -785,9 +785,6 @@ position = Vector2( 286, 278 )
 [node name="cultist" parent="objects/people" instance=ExtResource( 26 )]
 position = Vector2( 28, 309 )
 
-[node name="paladin" parent="objects/people" instance=ExtResource( 16 )]
-position = Vector2( 423, 298 )
-
 [node name="samurai" parent="objects/people" instance=ExtResource( 24 )]
 position = Vector2( 274, 148 )
 
@@ -815,14 +812,92 @@ position = Vector2( 360, 231 )
 [node name="king" parent="objects/people" instance=ExtResource( 31 )]
 position = Vector2( 66, 225 )
 
-[node name="paladin2" parent="objects/people" instance=ExtResource( 16 )]
-position = Vector2( 254, 223 )
+[node name="lighting" type="YSort" parent="objects"]
 
-[node name="paladin3" parent="objects/people" instance=ExtResource( 16 )]
-position = Vector2( 287, 323 )
+[node name="Light2D" type="Light2D" parent="objects/lighting"]
+position = Vector2( 424, 153 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
 
-[node name="paladin4" parent="objects/people" instance=ExtResource( 16 )]
-position = Vector2( 217, 284 )
+[node name="Light2D2" type="Light2D" parent="objects/lighting"]
+position = Vector2( 472, 154 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D3" type="Light2D" parent="objects/lighting"]
+position = Vector2( 423, 265 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D4" type="Light2D" parent="objects/lighting"]
+position = Vector2( 473, 266 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D5" type="Light2D" parent="objects/lighting"]
+position = Vector2( 56, 266 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D6" type="Light2D" parent="objects/lighting"]
+position = Vector2( 88, 154 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D7" type="Light2D" parent="objects/lighting"]
+position = Vector2( 40, 154 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D8" type="Light2D" parent="objects/lighting"]
+position = Vector2( 424, 9 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D9" type="Light2D" parent="objects/lighting"]
+position = Vector2( 503, 10 )
+texture = ExtResource( 16 )
+texture_scale = 0.3
+
+[node name="Light2D10" type="Light2D" parent="objects/lighting"]
+position = Vector2( 248, 76 )
+texture = ExtResource( 16 )
+energy = 0.8
+
+[node name="Light2D11" type="Light2D" parent="objects/lighting"]
+position = Vector2( 249, 286 )
+texture = ExtResource( 16 )
+energy = 0.8
+
+[node name="Light2D12" type="Light2D" parent="objects/lighting"]
+position = Vector2( 397, 90 )
+texture = ExtResource( 16 )
+texture_scale = 0.4
+energy = 0.8
+
+[node name="Light2D13" type="Light2D" parent="objects/lighting"]
+position = Vector2( 96, 72 )
+texture = ExtResource( 16 )
+texture_scale = 0.8
+energy = 0.8
+
+[node name="Light2D14" type="Light2D" parent="objects/lighting"]
+position = Vector2( 393, 329 )
+texture = ExtResource( 16 )
+texture_scale = 0.5
+energy = 0.5
+
+[node name="Light2D15" type="Light2D" parent="objects/lighting"]
+position = Vector2( 397, 207 )
+texture = ExtResource( 16 )
+texture_scale = 0.5
+energy = 0.5
+
+[node name="Light2D16" type="Light2D" parent="objects/lighting"]
+position = Vector2( 101, 211 )
+texture = ExtResource( 16 )
+texture_scale = 0.5
+energy = 0.5
 
 [node name="bookshelf1" parent="objects" instance=ExtResource( 33 )]
 position = Vector2( 336, 321 )
@@ -860,15 +935,6 @@ position = Vector2( 366, 339 )
 [node name="BottomRight" parent="objects/Camera2D/Limits" index="1"]
 position = Vector2( 516, 394 )
 
-[node name="mageGuild_out_pos" type="Position2D" parent="."]
-position = Vector2( 247, 365 )
-
-[node name="mageGuild_out" parent="." instance=ExtResource( 13 )]
-position = Vector2( 248, 387 )
-rotation = 1.57079
-collision_layer = 128
-collision_mask = 2
-
 [node name="TopUi" type="CanvasLayer" parent="."]
 
 [node name="pause_game" type="TextureButton" parent="TopUi"]
@@ -892,13 +958,22 @@ margin_bottom = 40.0
 
 [node name="Label" parent="TopUi" instance=ExtResource( 10 )]
 
-[node name="mageGuild_cellar" parent="." instance=ExtResource( 13 )]
-position = Vector2( 488, 33 )
-collision_layer = 128
-collision_mask = 2
-
-[node name="mageGuild_cellar_pos" type="Position2D" parent="."]
+[node name="mageGuild_cellar_night_pos" type="Position2D" parent="."]
 position = Vector2( 489, 60 )
+rotation = 1.57079
+
+[node name="mageGuild_cellar_night" parent="." instance=ExtResource( 34 )]
+position = Vector2( 488, 29 )
+rotation = 3.14159
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.341176, 0.333333, 0.317647, 1 )
+
+[node name="mageGuild_out_night_pos" type="Position2D" parent="."]
+position = Vector2( 247, 365 )
+
+[node name="mageGuild_out_night" parent="." instance=ExtResource( 34 )]
+position = Vector2( 248, 389 )
 rotation = 1.57079
 
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]

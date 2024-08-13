@@ -892,15 +892,6 @@ margin_bottom = 40.0
 
 [node name="Label" parent="TopUi" instance=ExtResource( 10 )]
 
-[node name="mageGuild_cellar" parent="." instance=ExtResource( 13 )]
-position = Vector2( 488, 33 )
-collision_layer = 128
-collision_mask = 2
-
-[node name="mageGuild_cellar_pos" type="Position2D" parent="."]
-position = Vector2( 489, 60 )
-rotation = 1.57079
-
 [connection signal="pressed" from="TopUi/pause_game" to="." method="_on_pause_game_pressed"]
 
 [editable path="objects/Camera2D"]

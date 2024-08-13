@@ -82,6 +82,10 @@
 			"text": "I have a job for you tonight. This will be your chance to use ListKey magic in a real situation"
 		},
 		{
+			"change_scene": "res://World/room/night/orphanage_hallway_night.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		}

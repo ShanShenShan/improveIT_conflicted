@@ -8,7 +8,7 @@ onready var current_level = $TopUi/Label
 onready var player = $objects/Player
 onready var player_controls = $objects/Player/Controller
 
-var current_map = "res://levels/mageGuild_out.tscn"
+var current_map = "res://levels/stage_3_night/mageGuild_out_night.tscn"
 var starting_player_position = Vector2 (568, 428)
 var dialogue
 

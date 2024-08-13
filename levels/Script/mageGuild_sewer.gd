@@ -7,7 +7,7 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var current_level = $TopUi/Label
 onready var player = $Player
 onready var player_controls = $Player/Controller
-var current_map = "res://levels/mageGuild_sewer.tscn"
+var current_map = "res://levels/stage_3_night/mageGuild_sewer_night.tscn"
 var starting_player_position = Vector2 (568, 428)
 
 # Called when the node enters the scene tree for the first time.

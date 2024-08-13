@@ -7,44 +7,54 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var current_level = $TopUi/Label
 onready var player = $YSort/Player
 onready var player_controls = $YSort/Player/Controller
-
-var current_map = "res://levels/stage_3_night/towncenter_night.tscn"
-var starting_player_position = Vector2(128, 67)
+var current_map = "res://World/room/night/orphanage_hallway_night.tscn"
+var staring_player_position = Vector2(301,102)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	valen()
 	set_overall_initial_position()
 	set_player_position()
 	
 	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
-	
 	Global.set_map(current_map)
-
+	
+	
 func set_player_position():
-	if Global.get_player_initial_position() == Vector2(0, 0):
-		Global.set_player_current_position(starting_player_position)
-		print("1")
+	if Global.get_player_initial_position() == Vector2(0,0):
+		Global.set_player_current_position(staring_player_position)
+		#print("one")
+		
+		
 	elif Global.from_level != null && Global.load_game_position == true:
 		player.global_position = Global.get_player_current_position()
 		Global.load_game_position = false
-		print("2")
-	elif Global.from_level != null:
-		var target_node_path = Global.from_level + "_pos"
-		if has_node(target_node_path):
-			var target_node = get_node(target_node_path)
-			player.global_position = target_node.position
-			#print("Player position set from ", target_node_path)
+		#print("2")
+		
+	elif Global.from_level != null:           
+		if has_node(Global.from_level + "_pos"):
+			var target_node = get_node(Global.from_level + "_pos")
+			player.global_position = target_node.position		
+			#print("Player position set from ", Global.from_level + "_pos")
+			print(Global.player_position_retain)
 		else:
 			pass
-			#print("Player position set from ", target_node_path)
+			#print(Global.from_level)
+			#print("Node with name '%s' does not exist" % (Global.from_level + "_pos"))
 	else:
+		#print(Global.from_level)
 		player.global_position = Global.get_player_current_position()
-		print("3")
-		
+		#print("five")    
+
 func set_overall_initial_position():
 	Global.set_player_initial_position(Global.get_player_current_position())
 
+func after_tutorial_headings(timelinename):
+	topui.show()
+	player_controller.show()
+	Global.door_activated=true
+	
 
 func resume_the_game() -> void:
 	get_tree().paused = false
@@ -61,5 +71,12 @@ func _on_pause_game_pressed():
 	player_controller.visible = false
 	pause_ui.show()
 
+func valen():
+	player_controls.visible = false
+	Global.set_map(current_map)
+	var new_dialog = Dialogic.start('stage3valen')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "end")
 
-
+func end(timelineend):
+	player_controls.visible = true

@@ -6,6 +6,10 @@ export var ACCELERATION = 500
 export var MAX_SPEED = 80
 export var ROLL_SPEED = 120
 export var FRICTION = 500
+export var cooldown_time = 2.0
+
+onready var buttonroll = $Controller/Control/BtnRoll
+onready var buttonattack = $Controller/Control/BtnAttack  # Correct button reference
 
 enum {
 	MOVE,
@@ -31,21 +35,34 @@ func _ready():
 	stats.connect("no_health", self, "player_drain_health")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
+	
+	buttonattack.connect("pressed", self, "_on_button_pressed", [buttonattack])
+	buttonroll.connect("pressed", self, "_on_button_pressed", [buttonroll])
+	
+func _on_button_pressed(button):
+	if button == buttonroll and state != ROLL:
+		# Disable the button and start cooldown
+		button.visible = false
+		state = ROLL
+		yield(get_tree().create_timer(cooldown_time), "timeout")
+		button.visible = true  # Re-enable the button
+	elif button == buttonattack and state != ATTACK:
+		# Disable the button and start cooldown
+		button.visible = false
+		state = ATTACK
+		yield(get_tree().create_timer(cooldown_time), "timeout")
+		button.visible = true  # Re-enable the button
 
 func _physics_process(delta):
-	
 	match state:
 		MOVE:
 			move_state(delta)
-		
 		ROLL:
 			roll_state()
-		
 		ATTACK:
 			attack_state()
-	
+
 func move_state(delta):
-	
 	# Get joystick input
 	var input_vector = joystick.get_velo()
 	
@@ -65,7 +82,8 @@ func move_state(delta):
 	move()
 	
 	if Input.is_action_just_pressed("roll"):
-		state = ROLL
+		if state != ROLL:
+			state = ROLL
 	
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
@@ -101,7 +119,6 @@ func player_drain_health():
 	stats.health = 5
 	SceneTransition.change_scene("res://intro/Game_over.tscn")
 	
-
 func _on_Hurtbox_invincibility_started():
 	blinkAnimationPlayer.play("Start")
 

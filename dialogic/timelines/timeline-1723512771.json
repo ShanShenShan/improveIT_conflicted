@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "All the younger children were now tucked in and safe. I hope they all be sleeping peacefully."
+		},
+		{
+			"change_timeline": "timeline-1722653052.json",
+			"event_id": "dialogic_020"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1723512771.json",
+		"name": "stage3valen"
+	}
+}
