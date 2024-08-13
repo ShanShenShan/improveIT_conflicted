@@ -486,7 +486,7 @@ frame = 40
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 299, 101 )
+position = Vector2( 298, 101 )
 
 [node name="YSort" type="YSort" parent="YSort"]
 
