@@ -5,6 +5,7 @@
 	"folders": {
 		"Characters": {
 			"files": [
+				"character-1723544892.json",
 				"character-1723102784.json",
 				"character-1723101616.json",
 				"character-1723097609.json",
@@ -19,7 +20,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Definitions": {
@@ -46,7 +47,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Themes": {
@@ -100,7 +101,18 @@
 						"timeline-1722950750.json",
 						"timeline-1722950878.json",
 						"timeline-1723096670.json",
-						"timeline-1723515023.json"
+						"timeline-1723515023.json",
+						"timeline-1723543306.json",
+						"timeline-1723544395.json",
+						"timeline-1723545000.json",
+						"timeline-1723547149.json",
+						"timeline-1723547771.json",
+						"timeline-1723548141.json",
+						"timeline-1723548335.json",
+						"timeline-1723548413.json",
+						"timeline-1723548531.json",
+						"timeline-1723548557.json",
+						"timeline-1723549061.json"
 					],
 					"folders": {
 

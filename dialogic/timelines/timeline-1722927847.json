@@ -39,6 +39,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Use your ListKey magic here and find the correct index."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {

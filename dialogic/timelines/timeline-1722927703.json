@@ -39,6 +39,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "We've got a tip that there's an unguarded treasure inside this manor. This is the perfect opportunity for you to practice using ListKey magic."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {
