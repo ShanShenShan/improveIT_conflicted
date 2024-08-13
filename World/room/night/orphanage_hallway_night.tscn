@@ -491,7 +491,7 @@ position = Vector2( 299, 101 )
 [node name="YSort" type="YSort" parent="YSort"]
 
 [node name="Light2D" type="Light2D" parent="YSort/YSort"]
-position = Vector2( 167, 103 )
+position = Vector2( 168, 103 )
 texture = ExtResource( 2 )
 texture_scale = 1.5
 energy = 0.6
