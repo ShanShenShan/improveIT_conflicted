@@ -20,7 +20,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Definitions": {
@@ -47,7 +47,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": true
+				"folded": false
 			}
 		},
 		"Themes": {
@@ -125,7 +125,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"Valen": {

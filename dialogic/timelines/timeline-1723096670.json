@@ -79,7 +79,7 @@
 			"set_value": "1"
 		},
 		{
-			"change_scene": "res://Battlescenes/stage2_list.tscn",
+			"change_scene": "res://intro/question_panel.tscn",
 			"event_id": "dialogic_041"
 		},
 		{

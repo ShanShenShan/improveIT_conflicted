@@ -89,6 +89,10 @@ func feedback(first_d, second_d, feedback, change_scene_on_feedback=false):
 		add_child(new_dialog)
 		new_dialog.connect("timeline_end", self, "end")
 
+#vacant purpose to avoid error
+func end():
+	pass
+
 func change_scene(scene_path):
 	var result = get_tree().change_scene(scene_path)
 	if result != OK:
