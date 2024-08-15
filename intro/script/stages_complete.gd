@@ -11,8 +11,7 @@ func _ready():
 	# Initialize stage visibility
 	stage1.visible = false
 	stage2.visible = false
-
-	# Connect the timer signal if it's not already connected
+	
 	if not timer.is_connected("timeout", self, "_on_Timer_timeout"):
 		timer.connect("timeout", self, "_on_Timer_timeout")
 	
@@ -23,6 +22,7 @@ func _process(delta: float) -> void:
 	if Global2.stage2_complete:
 		show_stage(2)
 		Global2.stage2_complete = false
+		#pass
 
 func show_stage(stage):
 	if stage == 1:

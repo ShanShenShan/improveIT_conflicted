@@ -10,9 +10,11 @@ onready var player_controls = $YSort/Player/Controller
 var current_map = "res://World/room/night/orphanage_hallway_night.tscn"
 var staring_player_position = Vector2(301,102)
 
+var starting_dialopgue = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	valen()
+	if Global.dialogue1 == false:
+		valen()
 	set_overall_initial_position()
 	set_player_position()
 	
@@ -80,3 +82,4 @@ func valen():
 
 func end(timelineend):
 	player_controls.visible = true
+	Global.dialogue1= true #starting dialogue trigger control
