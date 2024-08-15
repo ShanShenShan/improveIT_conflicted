@@ -152,6 +152,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d1.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -172,6 +180,14 @@
 			"set_theme": "theme-1723254206.cfg"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d2.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -190,6 +206,14 @@
 		{
 			"background": "res://Scenes/pictures/orphanage/office.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d3.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -218,6 +242,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d4.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -228,16 +260,40 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d5.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Meanwhile, When we are using IList as ListKey Magic. It means we are using Universal Key. Not a specific one."
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d6.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "That's why it is much appropriate to use this IList formulei to unlock chest or doors. "
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d7.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",
@@ -295,14 +351,30 @@
 			"value": ""
 		},
 		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d8.wav",
+			"volume": 0
+		},
+		{
 			"character": "character-1721952113.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Let me Highlighted the difference"
+			"text": "Let me highlight the difference"
 		},
 		{
 			"background": "res://Scenes/pictures/stage2/list higlioghts.png",
 			"event_id": "dialogic_021"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Dialogue/Voice/stage2merrick/s2u1d9.wav",
+			"volume": 0
 		},
 		{
 			"character": "character-1721952113.json",

@@ -422,7 +422,6 @@ tile_data = PoolIntArray( 262146, 0, 0, 262147, 536870912, 0, 262148, 536870912,
 
 [node name="chest_lock" parent="YSort/YSort2" instance=ExtResource( 12 )]
 position = Vector2( 80, 103 )
-rotation = -1.5708
 
 [node name="TileMap" type="TileMap" parent="YSort/YSort2"]
 tile_set = SubResource( 18 )
