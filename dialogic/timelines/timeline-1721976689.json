@@ -7,7 +7,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": false,
-			"wait_seconds": 1
+			"wait_seconds": 2
 		},
 		{
 			"background": "res://Scenes/pictures/stage1/orphanage_basementindex2.png",
@@ -16,7 +16,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": false,
-			"wait_seconds": 1
+			"wait_seconds": 1.5
 		},
 		{
 			"background": "res://Scenes/pictures/stage1/orphanage_basementindex3.png",
@@ -25,7 +25,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": false,
-			"wait_seconds": 1
+			"wait_seconds": 1.5
 		},
 		{
 			"background": "res://Scenes/pictures/stage1/orphanage_basementindex4.png",
@@ -34,7 +34,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": false,
-			"wait_seconds": 1
+			"wait_seconds": 1.5
 		},
 		{
 			"background": "res://Scenes/pictures/stage1/orphanage_basementindex5.png",
