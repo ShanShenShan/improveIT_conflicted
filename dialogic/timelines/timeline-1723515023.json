@@ -54,6 +54,10 @@
 			"text": "From there you can review the questions, answers and feedback that you've got. To foster your knowledge about specific C# magic. Check it out."
 		},
 		{
+			"emit_signal": "stage2_done",
+			"event_id": "dialogic_040"
+		},
+		{
 			"change_scene": "res://intro/Evaluation.tscn",
 			"event_id": "dialogic_041"
 		}

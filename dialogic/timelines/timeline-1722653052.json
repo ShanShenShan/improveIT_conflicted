@@ -87,7 +87,7 @@
 			"text": "I see..."
 		},
 		{
-			"animation": "4-fade_out.gd",
+			"animation": "back_out_left.gd",
 			"animation_length": 2,
 			"animation_wait": true,
 			"change_mirror_portrait": false,
@@ -133,7 +133,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "",
+			"file": "res://Dialogue/Voice/stage2p3/Val do you have to g.wav",
 			"volume": 0
 		},
 		{
@@ -161,7 +161,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "",
+			"file": "res://Dialogue/Voice/stage2p3/Be careful Val We ne.wav",
 			"volume": 0
 		},
 		{

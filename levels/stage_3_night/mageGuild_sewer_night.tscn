@@ -453,7 +453,7 @@ format = 1
 tile_data = PoolIntArray( 5, 0, 65536, 15, 0, 65538, 65541, 0, 131072, 65551, 0, 65538, 131087, 0, 131074, 196623, 0, 196608 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 100, 68 )
+position = Vector2( 274, 55 )
 
 [node name="objects" type="YSort" parent="."]
 
@@ -475,7 +475,7 @@ position = Vector2( 110, 146 )
 [node name="Node2D10" parent="objects" instance=ExtResource( 3 )]
 position = Vector2( 31, 17 )
 
-[node name="Node2D2" parent="objects" instance=ExtResource( 4 )]
+[node name="door" parent="objects" instance=ExtResource( 4 )]
 position = Vector2( 96, 54 )
 
 [node name="TopUi" type="CanvasLayer" parent="."]

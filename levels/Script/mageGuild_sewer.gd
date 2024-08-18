@@ -7,7 +7,10 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var current_level = $TopUi/Label
 onready var player = $Player
 onready var player_controls = $Player/Controller
+onready var interaction_button = $objects/door/TextureButton
+
 var current_map = "res://levels/stage_3_night/mageGuild_sewer_night.tscn"
+
 var starting_player_position = Vector2 (568, 428)
 
 # Called when the node enters the scene tree for the first time.
@@ -17,7 +20,9 @@ func _ready():
 	
 	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
+	interaction_button.connect("pressed", self, "first_door")
 	Global.set_map(current_map)
+	
 
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
@@ -27,6 +32,10 @@ func set_player_position():
 		player.global_position = Global.get_player_current_position()
 		Global.load_game_position = false
 		#print("2")
+	# Whenever the player get into new scene of event.
+	elif Global.get_player_current_position() != Vector2(0,0) and Global.player_position_retain == true:
+		player.global_position = Global.get_player_current_position()
+		
 	elif Global.from_level != null:
 		var target_node_path = Global.from_level + "_pos"
 		if has_node(target_node_path):
@@ -59,3 +68,17 @@ func _on_pause_game_pressed():
 	topui.visible = false
 	player_controller.visible = false
 	pause_ui.show()
+
+#accesing dialogue
+func first_door():
+	player_controls.visible = false
+	interaction_button.visible = false
+	
+	Global.set_map(current_map)
+	var new_dialog = Dialogic.start('valstage5ep1')
+	add_child(new_dialog)
+	new_dialog.connect("timeline_end", self, "after_val")
+
+#dialogue end
+func after_val(timelineend):
+	pass

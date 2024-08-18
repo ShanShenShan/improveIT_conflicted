@@ -4,6 +4,7 @@ extends Node
 var badge1 = false
 var badge2 = false
 
+
 #quest
 var explore_town = 0
 
@@ -19,15 +20,15 @@ var stage2_complete = false
 ######################### DYNAMIC QUIZ VALUES #######################
 # Evaluation: using dictionaries for questions, answers, and feedback
 var evaluations = {
-	"questions": ["Question1", "question2", "", "","",""],
-	"answers": ["eins","zwei", "drei","vier", "funf", "sechs", "seiben","acht","neun"
-	, "zehn", "elf", "zwolf","dreizehn", "vierzehn", "funfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig",""],
-	"feedback": ["feedback1", "feedback2", "feedback3", "feedback4","feedback5", "feedback6", "feedback7", "feedback8","feedback9","feedback10"
+	"questions": ["", "", "", "","",""],
+	"answers": ["","", "","", "", "", "","",""
+	, "", "", "","", "", "", "", "", "", "", "",""],
+	"feedback": ["", "", "", "","", "", "", "","",""
 	, "feedback11", "feedback12", "feedback13","feedback14", "feedback15", "feedback16", "feedback17", "feedback18", "feedback19", "feedback20",""]
 }
 
 #correct answer trigger
-var correct_answer_ch1_1 = false 
+var correct_answer_ch1_1 = false
 var correct_answer_ch1_2 = false
 var correct_answer_ch1_3 = false
 var correct_answer_ch1_4 = false
@@ -93,13 +94,8 @@ func set_trigger_answer(question_index: int, choice_index: int, value: bool):
 #var answer = get_trigger_answer(0, 2)  # Retrieves the trigger for the 3rd choice of the 1st question
 #set_trigger_answer(0, 2, false)        # Sets the trigger for the 3rd choice of the 1st question to false
 
-
-
-
-
-
 #dialogue name
-var dialogue_name = "evaluation"
+var dialogue_name = ""
 ######################### DYNAMIC QUIZ VALUES #######################
 
 

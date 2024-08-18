@@ -1,0 +1,23 @@
+{
+	"events": [
+		{
+			"character": "character-1721952703.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I thought I can never open this."
+		},
+		{
+			"emit_signal": "stage3_done",
+			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://intro/Evaluation.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5.1",
+		"file": "timeline-1723815657.json",
+		"name": "stage3React1"
+	}
+}

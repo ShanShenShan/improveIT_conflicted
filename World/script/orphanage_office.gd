@@ -22,7 +22,8 @@ func _ready():
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed", self, "merrick2")
 	Global.set_map(current_map)
-	#print(Global2.stage3_trigger)
+	print(Global2.stage3_trigger)
+	print(Global2.stage2_complete)
 	
 
 func set_player_position():
@@ -79,36 +80,32 @@ func merrick2():
 	Global.set_map(current_map)
 	var new_dialog = Dialogic.start('stage2')
 	add_child(new_dialog)
-	new_dialog.connect("dialogic_signal", self, "value_activating")
 	new_dialog.connect("timeline_end", self, "after_question_no")
 
-func value_activating(param):
-	if param == "stage2_done":
-		Global2.set_question(0,"Which  magic is used to unlock doors, chest, and even decrypt complex key locks")
-		Global2.set_answers(0,"List")
-		Global2.set_answers(1,"Classcraft")
-		Global2.set_answers(2,"OOP")
-		Global2.set_answers(3,"Foreach")
-		Global2.set_feedback(0,"Correct!")
-		Global2.set_feedback(1,"wrong!, You must remember that it was vital in our line of work. ClassCraft was too advanced for you Valen")
-		Global2.set_feedback(2,"No! Remember, we need to access its right index to unlock what's need to unlock")
-		Global2.set_feedback(3,"Did you already forget it?, I didn't teach you about this magic but soon.")
-		Global2.set_question(1,"How do can we unlock various things, by Accessing what specific things in ListKey Magic?")
-		Global2.set_answers(4,"inbox")
-		Global2.set_answers(5,"index")
-		Global2.set_answers(6,"indoors")
-		Global2.set_answers(7,"incode")
-		Global2.set_feedback(4,"Nope, the answer count usually starts from ZERO, Remember that.")
-		Global2.set_feedback(5,"Correct!, Think of an index as a marker that tells you the exact position of an item within a ListKey.")
-		Global2.set_feedback(6,"we used ListKey Magic to unlock doors but INDOORS is not the right term")
-		Global2.set_feedback(7,"Wrong Valen!, the right asnwer helps you quickly find and access items in ListKey Magic")
-		Global2.correct_answer_ch1_1 = true
-		Global2.correct_answer_ch2_2 = true
-		Global2.stage2_complete = true
-		Global2.stage3_trigger = true
-		Global2.badge2 = true
+		
 func after_question_no(timelineend):
 	player_controls.visible = true
+	Global2.set_question(0,"Which  magic is used to unlock doors, chest, and even decrypt complex key locks")
+	Global2.set_answers(0,"List")
+	Global2.set_answers(1,"Classcraft")
+	Global2.set_answers(2,"OOP")
+	Global2.set_answers(3,"Foreach")
+	Global2.set_feedback(0,"Correct!")
+	Global2.set_feedback(1,"wrong!, You must remember that it was vital in our line of work. ClassCraft was too advanced for you Valen")
+	Global2.set_feedback(2,"No! Remember, we need to access its right index to unlock what's need to unlock")
+	Global2.set_feedback(3,"Did you already forget it?, I didn't teach you about this magic but soon.")
+	Global2.set_question(1,"How do can we unlock various things, by Accessing what specific things in ListKey Magic?")
+	Global2.set_answers(4,"inbox")
+	Global2.set_answers(5,"index")
+	Global2.set_answers(6,"indoors")
+	Global2.set_answers(7,"incode")
+	Global2.set_feedback(4,"Nope, the answer count usually starts from ZERO, Remember that.")
+	Global2.set_feedback(5,"Correct!, Think of an index as a marker that tells you the exact position of an item within a ListKey.")
+	Global2.set_feedback(6,"we used ListKey Magic to unlock doors but INDOORS is not the right term")
+	Global2.set_feedback(7,"Wrong Valen!, the right asnwer helps you quickly find and access items in ListKey Magic")
+	Global2.dialogue_name = "evaluation"
+	Global2.correct_answer_ch1_1 = true
+	Global2.correct_answer_ch2_2 = true
 	
 	
 

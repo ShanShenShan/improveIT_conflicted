@@ -191,14 +191,26 @@ func need_hearts(change_scene_on, dialogue_name):
 # Change the scene based on a condition
 func change_scene(change_scene_on, dialogue_name):
 	if Global2.get(change_scene_on) == true:
-		var new_dialog = Dialogic.start('evaluation')
+		var new_dialog = Dialogic.start(dialogue_name)
 		add_child(new_dialog)
+		new_dialog.connect("dialogic_signal", self, "value_activating")
 		new_dialog.connect("timeline_end", self, "end")
 	else:
 		q_and_a_show()
-
+		
+func value_activating(param):
+	if param == "stage2_done":
+		Global2.stage2_complete = true
+		Global2.stage3_trigger = true
+		Global2.badge2 = true
+		#print("trigger")
+	if param == "stage3_done": # SPACE FOR STAGE 3 DONE, TRIGGER IN DIALOGIC VALEN.
+		
+		pass
+		#print("trigger")
 # Reset all relevant Global2 properties to false (used to avoid dialogue errors)
 func end(timelinename):
+	
 	var properties = [
 		"correct_answer_ch1_1", "correct_answer_ch1_2", "correct_answer_ch1_3", "correct_answer_ch1_4",
 		"correct_answer_ch2_1", "correct_answer_ch2_2", "correct_answer_ch2_3", "correct_answer_ch2_4",

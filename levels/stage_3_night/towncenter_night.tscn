@@ -669,7 +669,6 @@ color = Color( 0.160784, 0.145098, 0.145098, 1 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 13 )]
 position = Vector2( 361, 24 )
-zoom = Vector2( 0.8, 0.8 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
 position = Vector2( 705, 449 )
