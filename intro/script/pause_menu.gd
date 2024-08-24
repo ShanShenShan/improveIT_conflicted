@@ -43,5 +43,4 @@ func _on_option_pressed():
 
 func _on_save_pressed():
 	save.show()
-	Global.save_triggered = false
 

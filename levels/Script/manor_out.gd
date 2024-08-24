@@ -16,8 +16,6 @@ var starting_player_position = Vector2 (528, 395)
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button1.connect("pressed", self, "knight_dialogue")
 	Global.set_map(current_map)
@@ -64,13 +62,15 @@ func _on_pause_game_pressed():
 
 func knight_dialogue():
 	player_controls.visible = false
-	interaction_button1.visible = false
+	interaction_button1.hide()
 	var new_dialog = Dialogic.start('manor_guard')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "after_knight")
 
 func after_knight(timelinename):
 	player_controls.visible = true
-	interaction_button1.visible = true
+	interaction_button1.show()
+	Global2.explore_town = int(Dialogic.get_variable("explore_town"))
+	Global2.manor_guard = int(Dialogic.get_variable("manor_guard"))
 
 

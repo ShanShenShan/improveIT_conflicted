@@ -28,7 +28,7 @@ onready var enter_signal1 = $YSort/YSort2/Path2D/PathFollow2D/Merrick/Area2D
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	Global.set_current_level(current_level.text)
+	
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed", self, "merrick1")
 	Global.set_map(current_map)
@@ -122,3 +122,4 @@ func after_stagem2(timelinename):
 	Global2.stage2_trigger = true
 	Global2.stage1_complete = true
 	merrick_sprite.visible = true
+	

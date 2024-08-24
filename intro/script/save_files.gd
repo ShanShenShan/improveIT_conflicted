@@ -52,9 +52,9 @@ func file1_pressed():
 	if Global.save_triggered == false:
 		file1.text = Global.get_current_level()
 		Global.save_button_click = true
+		Global.save_triggered = true
 		saving_file.save_game()	
 		#print(Global.save_button_click)
-		Global.save_triggered = true
 	else:
 		#saving_file.load_game_button()
 		if Global.save_button_click == true:

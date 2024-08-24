@@ -16,10 +16,9 @@ var starting_player_position = Vector2(128, 67)
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button1.connect("pressed", self, "citizen_dialogue")
+	
 	Global.set_map(current_map)
 
 func set_player_position():
@@ -63,12 +62,17 @@ func _on_pause_game_pressed():
 	pause_ui.show()
 
 func citizen_dialogue():
+	interaction_button1.hide()
 	player_controls.visible = false
 	var new_dialog = Dialogic.start('citizen3')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "after_citizen3")
+	
 
 func after_citizen3(timelinename):
+	interaction_button1.show()
 	player_controls.visible = true
+	Global2.explore_town = int(Dialogic.get_variable("explore_town"))
+	Global2.lady_on_townsquare = int(Dialogic.get_variable("citizen"))
 
 

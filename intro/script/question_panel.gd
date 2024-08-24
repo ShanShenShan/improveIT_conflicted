@@ -201,6 +201,7 @@ func change_scene(change_scene_on, dialogue_name):
 func value_activating(param):
 	if param == "stage2_done":
 		Global2.stage2_complete = true
+		Global2.stage2_trigger = false
 		Global2.stage3_trigger = true
 		Global2.badge2 = true
 		#print("trigger")

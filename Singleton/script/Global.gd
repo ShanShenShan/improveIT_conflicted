@@ -1,7 +1,7 @@
 extends Node
 
 # Variables
-var save_triggered = true
+var save_triggered = false
 var player_position_engaged = Vector2(0, 0)
 var player_position_retain = false
 var player_initial_position = Vector2(0, 0)

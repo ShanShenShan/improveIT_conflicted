@@ -16,7 +16,6 @@ func _ready():
 	set_overall_initial_position()
 	set_player_position()
 	
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed",self, "_on_NPC_interaction_stage1")
 	Global.set_map(current_map)
@@ -97,4 +96,3 @@ func after_dialog(timelinename):
 	var dialog = get_child(get_child_count() - 1) # Assuming the dialog is the last added child
 	if dialog:
 		dialog.queue_free() # This will remove the dialog node
-

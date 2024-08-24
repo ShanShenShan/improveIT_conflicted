@@ -4025,17 +4025,17 @@ margin_bottom = 11.0
 [node name="code3" type="VBoxContainer" parent="Control2/items"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
-margin_bottom = 154.0
+margin_right = 206.0
+margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/items/code3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
 texture = ExtResource( 33 )
 
 [node name="title" type="Label" parent="Control2/items/code3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Items method"
@@ -4045,7 +4045,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/items/code3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 125.0
 custom_fonts/font = SubResource( 4 )
 text = "To used the stated method there must be a existing list where you will  Gets or sets the element at the specified indexadd list value."
@@ -4055,7 +4055,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/items/code3"]
 margin_top = 129.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 143.0
 alignment = 1
 
@@ -4068,13 +4068,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/items/code3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/items/code3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -4083,17 +4083,17 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 154.0
 
 [node name="image_code" type="TextureRect" parent="Control2/items/displaying_process3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
 texture = ExtResource( 51 )
 
 [node name="title" type="Label" parent="Control2/items/displaying_process3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "items Method"
@@ -4103,12 +4103,12 @@ autowrap = true
 
 [node name="space2" type="Control" parent="Control2/items/displaying_process3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/items/displaying_process3"]
 margin_top = 99.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 129.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying the content of the list using the indexer
@@ -4120,7 +4120,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/items/displaying_process3"]
 margin_top = 133.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 147.0
 alignment = 1
 
@@ -4132,13 +4132,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/items/displaying_process3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/items/displaying_process3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -4527,17 +4527,17 @@ margin_bottom = 11.0
 [node name="code3" type="VBoxContainer" parent="Control2/trueforall"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/trueforall/code3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
 texture = ExtResource( 33 )
 
 [node name="title" type="Label" parent="Control2/trueforall/code3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "true for all method"
@@ -4547,7 +4547,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/trueforall/code3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 125.0
 custom_fonts/font = SubResource( 4 )
 text = "To used the stated method there must be an existing list that contains the values to check, if all of them agreed to what you stated. "
@@ -4557,7 +4557,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/trueforall/code3"]
 margin_top = 129.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 143.0
 alignment = 1
 
@@ -4570,13 +4570,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/trueforall/code3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/trueforall/code3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "

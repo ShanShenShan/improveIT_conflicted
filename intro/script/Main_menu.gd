@@ -11,15 +11,18 @@ onready var ui = $CanvasLayer
 onready var badges = $CanvasLayer/badges/Panel4
 onready var spell_book = $CanvasLayer/Spell_Book/Panel
 onready var save_files = $save_files/Panel
+onready var loaded_files = $save_files/saving_file
 
 func _ready():
-	
-	
 	quit.hide()
 	settings.hide()
 	start_button.connect("pressed", self, "_on_start_pressed")
 	exit_button.connect("pressed", self, "_on_exit_pressed")
 	continue_button.connect("pressed", self, "_on_continue_pressed")
+	loaded_files.check_if_loaded_data()
+	if Global.save_triggered == false:
+		continue_button.disabled = true
+		
 	
 
 func _on_continue_pressed() ->void:

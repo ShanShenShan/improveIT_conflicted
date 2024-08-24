@@ -21,6 +21,25 @@ onready var hurt = $hurt # Player
 
 var stats = PlayerStats
 
+# Dictionary to store question, correct answers, and feedback
+var question_data = {
+	"question": "Use Listkey magic to open the door. Use the below formula to create Listkey magic. Magic name is 'key' and use 'int' datatype(T).",
+	"correct_answers": {
+		"box1": "IList<int>",
+		"box2": "key",
+		"box3": "=",
+		"box4": "new List<int>",
+		"box5": "();"
+	},
+	"feedback": {
+		"box1": "Wrong box1: It is case sensitive, missing letters, or wrong datatype.\n",
+		"box2": "Wrong box2: It is case sensitive or maybe missing letters.\n",
+		"box3": "Wrong box3: Missing '='.\n",
+		"box4": "Wrong box4: It is case sensitive, missing letters, space, or wrong datatype.\n",
+		"box5": "Wrong box5: Missing symbol either (, ), or ;\n"
+	}
+}
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Connect the text_changed signal for each LineEdit to the check_inputs function
@@ -91,49 +110,44 @@ func _on_Button_pressed():
 	var feedback = ""
 	var correct = true
 	
-	Global2.set_question(0, "Use Listkey magic to open the door. Use the below formula to create Listkey magic. Magic name is 'key' and use 'int' datatype(T). ")
+	Global2.set_question(0, question_data["question"])
 	
-	# Check each box and accumulate errors
-	if box1.text.strip_edges() != "IList<int>":
-		Global2.set_trigger_answer(0,0,true)
+	# Check each box and accumulate errors using the dictionary
+	if box1.text.strip_edges() != question_data["correct_answers"]["box1"]:
+		Global2.set_trigger_answer(0, 0, true)
 		correct = false
-		feedback += "Wrong box1: It is case sensitive, missing letters, or wrong datatype.\n"
-	if box2.text.strip_edges() != "key":
-		Global2.set_trigger_answer(0,0,true)
+		feedback += question_data["feedback"]["box1"]
+	if box2.text.strip_edges() != question_data["correct_answers"]["box2"]:
+		Global2.set_trigger_answer(0, 0, true)
 		correct = false
-		feedback += "Wrong box2: It is case sensitive or maybe missing letters.\n"
-	if box3.text.strip_edges() != "=":
-		Global2.set_trigger_answer(0,0,true)
+		feedback += question_data["feedback"]["box2"]
+	if box3.text.strip_edges() != question_data["correct_answers"]["box3"]:
+		Global2.set_trigger_answer(0, 0, true)
 		correct = false
-		feedback += "Wrong box3: Missing '='.\n"
-	if box4.text.strip_edges() != "new List<int>":
-		Global2.set_trigger_answer(0,0,true)
+		feedback += question_data["feedback"]["box3"]
+	if box4.text.strip_edges() != question_data["correct_answers"]["box4"]:
+		Global2.set_trigger_answer(0, 0, true)
 		correct = false
-		feedback += "Wrong box4: It is case sensitive, missing letters, space, or wrong datatype.\n"
-	if box5.text.strip_edges() != "();":
+		feedback += question_data["feedback"]["box4"]
+	if box5.text.strip_edges() != question_data["correct_answers"]["box5"]:
 		correct = false
-		Global2.set_trigger_answer(0,0,true)
-		feedback += "Wrong box5: Missing symbol either (, ), or ;\n"
+		Global2.set_trigger_answer(0, 0, true)
+		feedback += question_data["feedback"]["box5"]
 		
-
 	# Compare the concatenated user answer to the correct answer
 	if user_answer != correct_answer:
 		correct = false
 		feedback += "\nConcatenated answer is incorrect.\n"
 		feedback += "Expected: " + correct_answer + "\n"
 		feedback += "Received: " + user_answer + "\n"
-		Global2.set_answers(0,user_answer)
-		Global2.set_feedback(0,feedback)
+		Global2.set_answers(0, user_answer)
+		Global2.set_feedback(0, feedback)
 		
-		
-
 	if correct:
 		display_feedback("All boxes correct!")
-		
 		SceneTransition.change_scene("res://intro/Evaluation.tscn")
 	else:
 		hurt_effect()
 		display_feedback(feedback)
 		yield(self, "textbox_closed")
 		q_and_a_show()
-

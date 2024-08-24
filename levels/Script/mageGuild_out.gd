@@ -18,8 +18,6 @@ var dialogue
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button1.connect("pressed", self, "paladin_dialogue")
 	interaction_button2.connect("pressed", self, "paladin_dialogue")
@@ -67,11 +65,17 @@ func _on_pause_game_pressed():
 	pause_ui.show()
 
 func paladin_dialogue():
+	interaction_button1.hide()
+	interaction_button2.hide()
 	player_controls.visible = false
 	var new_dialog = Dialogic.start('paladin')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "after_paladin")
 
 func after_paladin(timelinename):
+	interaction_button1.show()
+	interaction_button2.show()
 	player_controls.visible = true
+	Global2.explore_town = int(Dialogic.get_variable("explore_town"))
+	Global2.paladin_mage_guild = int(Dialogic.get_variable("paladin"))
 

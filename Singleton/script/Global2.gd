@@ -1,12 +1,17 @@
 extends Node
 
 #Badges, levels, stages
-var badge1 = false
+var badge1 = true
 var badge2 = false
 
-
+#Stage 2 talking with the villiger number of times
 #quest
 var explore_town = 0
+var lady_on_townsquare = 0
+var manor_guard = 0
+var paladin_mage_guild = 0
+
+
 
 #levels UI triger cange
 var stage2_trigger = false
@@ -16,6 +21,10 @@ var stage3_trigger = false
 #Stage completion trigger for the display notification
 var stage1_complete = false 
 var stage2_complete = false
+
+
+
+
 
 ######################### DYNAMIC QUIZ VALUES #######################
 # Evaluation: using dictionaries for questions, answers, and feedback
@@ -98,6 +107,32 @@ func set_trigger_answer(question_index: int, choice_index: int, value: bool):
 var dialogue_name = ""
 ######################### DYNAMIC QUIZ VALUES #######################
 
+######################### Sequence logic ############################
+# Dictionary to store the history of interactions
+var interaction_history = {
+	"interactions": []
+}
+
+# Function to add an interaction to the history
+func add_interaction(question: String, user_answer: String, feedback: String, correct: bool) -> void:
+	interaction_history["interactions"].append({
+		"question": question,
+		"user_answer": user_answer,
+		"feedback": feedback,
+		"correct": correct
+	})
+
+# Function to get the entire interaction history
+func get_interaction_history() -> Dictionary:
+	return interaction_history
+
+# Function to clear the interaction history
+func clear_interaction_history() -> void:
+	interaction_history = {
+		"interactions": []
+	}
+
+######################### Sequence Logic ############################
 
 #Questions
 func set_question(index: int, question_local: String):

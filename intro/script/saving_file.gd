@@ -7,6 +7,12 @@ func save_game():
 		"map": Global.get_map(),
 		"current_level": Global.get_current_level(),
 		
+		#save trigger to know ifthere is already save game
+		"save_triggered": Global.save_triggered,
+		
+		#from level map that the player belong last position
+		"from_level": Global.from_level,
+		
 		"player_current_position": Global.get_player_current_position(),
 		"player_initial_position": Global.player_initial_position,
 		"player_position_engaged": Global.player_position_engaged,
@@ -30,7 +36,10 @@ func save_game():
 		"stage2_trigger": Global2.stage2_trigger,
 		"stage3_trigger": Global2.stage3_trigger,
 		#quest
-		"explore_town": Global2.explore_town
+		"explore_town": Global2.explore_town,
+		"manor_guard": Global2.manor_guard,
+		"lady_on_townsquare": Global2.lady_on_townsquare,
+		"paladin_mage_guild": Global2.paladin_mage_guild
 		
 		
 	}
@@ -85,9 +94,21 @@ func load_game() -> void:
 		Global2.stage2_trigger = loaded_data["stage2_trigger"]
 		Global2.stage3_trigger = loaded_data["stage3_trigger"]
 		
+		#saving trigger to know wethear there is already save game
+		Global.save_triggered = loaded_data["save_triggered"]
+		
 		#Quest
 		Global2.explore_town = int(loaded_data["explore_town"])
+		Global2.paladin_mage_guild = int(loaded_data["paladin_mage_guild"])
+		Global2.lady_on_townsquare = int(loaded_data["lady_on_townsquare"])
+		Global2.manor_guard = int(loaded_data["manor_guard"])
+		Dialogic.set_variable("explore_town", Global2.explore_town)
+		Dialogic.set_variable("paladin", Global2.paladin_mage_guild)
+		Dialogic.set_variable("citizen", Global2.lady_on_townsquare)
+		Dialogic.set_variable("manor_guard", Global2.manor_guard)
 		
+		#last level of map the player belong
+		Global.from_level = loaded_data["from_level"]
 		
 		# player positions
 		Global.set_player_current_position(Vector2(loaded_data["player_current_position"][0], loaded_data["player_current_position"][1]))
@@ -130,5 +151,18 @@ func load_game_button() -> void:
 		# Fetch and set the save_button_click value
 		Global.save_button_click = loaded_data["save_button_click"]
 		Global.set_current_level(loaded_data["current_level"]) 
+	else:
+		print("Failed to open file for reading")
+
+func check_if_loaded_data():
+	var file = File.new()
+	var error = file.open("user://file.txt", File.READ)
+	if error == OK:
+		var content = file.get_as_text()
+		file.close()
+		var loaded_data = JSON.parse(content).result
+
+		# Fetch and set the save_button_click value
+		Global.save_triggered = loaded_data["save_triggered"]
 	else:
 		print("Failed to open file for reading")

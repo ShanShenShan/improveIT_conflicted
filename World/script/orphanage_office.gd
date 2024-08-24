@@ -18,7 +18,6 @@ func _ready():
 	set_overall_initial_position()
 	set_player_position()
 	
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed", self, "merrick2")
 	Global.set_map(current_map)
@@ -81,10 +80,16 @@ func merrick2():
 	var new_dialog = Dialogic.start('stage2')
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "after_question_no")
+	new_dialog.connect("dialogic_signal", self, "yes")
 
 		
 func after_question_no(timelineend):
 	player_controls.visible = true
+	
+
+#after asnwering yes
+func yes(param):
+	###### trigger question feedback ###########
 	Global2.set_question(0,"Which  magic is used to unlock doors, chest, and even decrypt complex key locks")
 	Global2.set_answers(0,"List")
 	Global2.set_answers(1,"Classcraft")
@@ -106,6 +111,5 @@ func after_question_no(timelineend):
 	Global2.dialogue_name = "evaluation"
 	Global2.correct_answer_ch1_1 = true
 	Global2.correct_answer_ch2_2 = true
-	
 	
 
