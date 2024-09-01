@@ -13,29 +13,16 @@ onready var notification_panel = $Panel/textbox
 func _ready():
 	
 	panel.hide()
-	saving_file.load_game_button()
-	#print(Global.save_button_click)
-	
-	
-	#print(Global.get_current_level())
-	
-	#saving_file.load_game()
-	#print(Global.save_triggered)
-	var printed_something = false
 
-	#if Global.get_map() != "":
-		#auto.text = "Autoload: " + Global.get_current_level()
-		#print("one")
-		#printed_something = true	if Global.save_button_click
+	
+
 	if Global.save_triggered == true:
-		file1.text = Global.get_current_level()
-		#print("two")
-		printed_something = true
-	if not printed_something:
+		saving_file.load_game_button()
+		file1.text = Global.current_level
+	else:
 		auto.text = "Auto Save File"
 		file1.text = "File 1"
-		#print("four")
-	#saving_file.load_game_button()
+
 	
 	# Connect signals from buttons to respective functions
 	auto.connect("pressed", self, "auto_save")

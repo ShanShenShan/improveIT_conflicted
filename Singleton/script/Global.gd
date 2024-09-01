@@ -26,7 +26,7 @@ var enemy_state = {"enemy1": false, "enemy2": false, "enemy3": false}
 var enemy_defeated = {"enemy1": false, "enemy2": false, "enemy3": false}
 
 var map = ""
-var current_level = ""
+var current_level = "Chapter1 U1 1 / 5"
 var save_button_click = false
 var load_button_click = false
 

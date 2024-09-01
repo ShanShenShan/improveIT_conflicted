@@ -106,4 +106,5 @@ func yes(param):
 	Global2.correct_answer_ch1_1 = true
 	Global2.correct_answer_ch2_2 = true
 	
+	
 

@@ -69,6 +69,7 @@ func _process(delta):
 	if locked:
 		unlocking_chest(delta)
 	
+	
 
 func _on_pause_game_pressed():
 	get_tree().paused = true

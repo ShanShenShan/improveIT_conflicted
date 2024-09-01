@@ -4,7 +4,7 @@ onready var stage1 = $TextureRect
 onready var stage2 = $TextureRect2
 onready var timer = $Timer
 onready var animation = $AnimationPlayer
-
+onready var save_n_load = $saving_file
 var current_stage = 0
 
 func _ready():
@@ -30,12 +30,18 @@ func show_stage(stage):
 			stage1.visible = true
 			stage2.visible = false
 			current_stage = 1
+			Global.save_triggered = true
+			PlayerStats.health = 5
+			save_n_load.auto_save_file()
 			timer.start(3)
 	elif stage == 2:
 		if not stage2.visible:
 			stage1.visible = false
 			stage2.visible = true
 			current_stage = 2
+			Global.save_triggered = true
+			PlayerStats.health = 5
+			save_n_load.auto_save_file()
 			timer.start(3)
 
 func _on_Timer_timeout():
