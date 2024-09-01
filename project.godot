@@ -63,11 +63,6 @@ _global_script_classes=[ {
 "class": "HistoryRow",
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
-}, {
-"base": "Control",
-"class": "mainmenu",
-"language": "GDScript",
-"path": "res://intro/script/Main_menu.gd"
 } ]
 _global_script_class_icons={
 "DTS": "",
@@ -80,8 +75,7 @@ _global_script_class_icons={
 "DialogicParser": "",
 "DialogicResources": "",
 "DialogicUtil": "",
-"HistoryRow": "",
-"mainmenu": ""
+"HistoryRow": ""
 }
 
 [application]

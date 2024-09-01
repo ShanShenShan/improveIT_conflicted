@@ -42,5 +42,7 @@ func _on_option_pressed():
 
 
 func _on_save_pressed():
+	Global.save_button_click = true
 	save.show()
+	
 

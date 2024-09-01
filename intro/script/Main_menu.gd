@@ -1,4 +1,3 @@
-class_name mainmenu
 extends Control
 
 onready var start_button = $MarginContainer/HBoxContainer/VBoxContainer/Start_new as Button
@@ -11,6 +10,7 @@ onready var ui = $CanvasLayer
 onready var badges = $CanvasLayer/badges/Panel4
 onready var spell_book = $CanvasLayer/Spell_Book/Panel
 onready var save_files = $save_files/Panel
+
 onready var loaded_files = $save_files/saving_file
 
 func _ready():
@@ -27,7 +27,7 @@ func _ready():
 
 func _on_continue_pressed() ->void:
 	save_files.show()
-	Global.save_triggered = true
+	Global.load_button_click = true
 	
 
 func _on_start_pressed() ->void:

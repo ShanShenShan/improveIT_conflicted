@@ -17,14 +17,10 @@ var starting_player_position = Vector2(160, 170)
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed", self, "merrick2")
 	Global.set_map(current_map)
-	#print(Global2.stage3_trigger)
 	
-
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
 		Global.set_player_current_position(starting_player_position)

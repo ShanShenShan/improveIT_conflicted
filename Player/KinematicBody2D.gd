@@ -54,6 +54,7 @@ func _on_button_pressed(button):
 		button.visible = true  # Re-enable the button
 
 func _physics_process(delta):
+	Global.set_player_current_position(global_position)
 	match state:
 		MOVE:
 			move_state(delta)

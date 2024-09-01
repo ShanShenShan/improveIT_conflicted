@@ -66,7 +66,6 @@ func resume_the_game() -> void:
 	pause_ui.hide()
 
 func _process(delta):
-	Global.set_player_current_position(player.global_position)
 	if locked:
 		unlocking_chest(delta)
 	

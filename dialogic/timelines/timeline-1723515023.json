@@ -58,7 +58,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"change_scene": "res://intro/Evaluation.tscn",
+			"change_scene": "res://intro/evaluation.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

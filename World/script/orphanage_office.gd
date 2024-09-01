@@ -21,9 +21,6 @@ func _ready():
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed", self, "merrick2")
 	Global.set_map(current_map)
-	print(Global2.stage3_trigger)
-	print(Global2.stage2_complete)
-	
 
 func set_player_position():
 	if Global.get_player_initial_position() == Vector2(0, 0):
@@ -59,9 +56,6 @@ func resume_the_game() -> void:
 	player_controller.visible = true
 	pause_ui.hide()
 
-func _process(_delta):
-	Global.set_player_current_position(player.global_position)
-	
 func _on_pause_game_pressed():
 	get_tree().paused = true
 	topui.visible = false

@@ -17,7 +17,6 @@ var starting_player_position = Vector2(236, 81)
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	Global.set_current_level(current_level.text)
 	resume.connect("pressed", self, "resume_the_game")
 	Global.set_map(current_map)
 

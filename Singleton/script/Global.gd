@@ -28,6 +28,21 @@ var enemy_defeated = {"enemy1": false, "enemy2": false, "enemy3": false}
 var map = ""
 var current_level = ""
 var save_button_click = false
+var load_button_click = false
+
+# Declare and initialize the dictionary to store the bat states
+var bat_states = {}  # Add this line at the top
+
+# Function to set the state of a bat (alive or dead)
+func set_bat_state(bat_id: String, is_alive: bool):
+	#print("Setting bat state: ID =", bat_id, "Alive =", is_alive)  # Debugging print
+	bat_states[bat_id] = is_alive
+
+# Function to get the state of a bat, defaulting to alive if not set
+func get_bat_state(bat_id: String) -> bool:
+	var state = bat_states.get(bat_id, true)  # Default to true (alive) if not set
+	#print("Getting bat state: ID =", bat_id, "Alive =", state)  # Debugging print
+	return state
 
 # Restarting function
 func restarting():

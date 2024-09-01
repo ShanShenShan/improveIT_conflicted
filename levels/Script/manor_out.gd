@@ -51,9 +51,6 @@ func resume_the_game() -> void:
 	player_controller.visible = true
 	pause_ui.hide()
 
-func _process(_delta):
-	Global.set_player_current_position(player.global_position)
-	
 func _on_pause_game_pressed():
 	get_tree().paused = true
 	topui.visible = false

@@ -1,7 +1,7 @@
 extends Node
 
 #Badges, levels, stages
-var badge1 = true
+var badge1 = false
 var badge2 = false
 
 #Stage 2 talking with the villiger number of times
@@ -10,7 +10,7 @@ var explore_town = 0
 var lady_on_townsquare = 0
 var manor_guard = 0
 var paladin_mage_guild = 0
-
+var after_quiz = 0
 
 
 #levels UI triger cange

@@ -15,8 +15,8 @@ enum {
 
 var velocity = Vector2.ZERO
 var knockback = Vector2.ZERO
-
 var state = CHASE
+export var bat_id: String = ""  # Unique ID for each bat
 
 onready var sprite = $AnimatedSprite
 onready var stats = $Stats
@@ -27,11 +27,20 @@ onready var wanderController = $WanderController
 onready var animationPlayer = $AnimationPlayer
 
 func _ready():
-	state = pick_random_state([IDLE, WANDER])
+	# Ensure the bat has a unique ID
+	if bat_id == "":
+		bat_id = str(self.get_instance_id())
+	#print("Bat Ready: ID =", bat_id)  # Debugging print
+
+	# Check the state from the Global singleton
+	if not Global.get_bat_state(bat_id):
+		#print("Bat is dead on load, removing from scene: ID =", bat_id)  # Debugging print
+		queue_free()  # If dead, remove from the scene
+	else:
+		#print("Bat is alive on load, initializing state: ID =", bat_id)  # Debugging print
+		state = pick_random_state([IDLE, WANDER])  # Initialize state if alive
 
 func _physics_process(delta):
-	
-	#Global.set_bat1_current_position(global_position)
 	knockback = knockback.move_toward(Vector2.ZERO, FRICTION * delta)
 	knockback = move_and_slide(knockback)
 	
@@ -85,6 +94,8 @@ func _on_Hurtbox_area_entered(area):
 	hurtbox.start_invincibility(0.4)
 
 func _on_Stats_no_health():
+	Global.set_bat_state(bat_id, false)  # Mark the bat as dead in the global state
+	#print("Bat Died: ID =", bat_id)  # Debugging print
 	queue_free()
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)

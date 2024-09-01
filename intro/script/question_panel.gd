@@ -199,7 +199,8 @@ func change_scene(change_scene_on, dialogue_name):
 		q_and_a_show()
 		
 func value_activating(param):
-	if param == "stage2_done":
+	if param == "stage2_done" && PlayerStats.health != 0:
+		Global2.after_quiz = Dialogic.set_variable("after_quiz",1)
 		Global2.stage2_complete = true
 		Global2.stage2_trigger = false
 		Global2.stage3_trigger = true

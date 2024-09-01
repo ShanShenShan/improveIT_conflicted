@@ -71,14 +71,6 @@
 			"text": "Good! now lets review what I taught you earlier."
 		},
 		{
-			"definition": "1723190522-787",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "1"
-		},
-		{
 			"emit_signal": "yes_option",
 			"event_id": "dialogic_040"
 		},

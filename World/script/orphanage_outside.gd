@@ -7,6 +7,7 @@ onready var resume = $TopUi/pause_menu/pause_menu/Panel/VBoxContainer/resume as 
 onready var current_level = $TopUi/Label
 onready var player = $YSort/Player
 onready var player_controls = $YSort/Player/Controller
+
 var current_map = "res://World/room/orphanage_outside.tscn"
 var starting_player_position = Vector2(128, 67)
 
@@ -29,17 +30,16 @@ func set_player_position():
 		if has_node(target_node_path):
 			var target_node = get_node(target_node_path)
 			player.global_position = target_node.position
-			print("Player position set from ", target_node_path)
+			#print("Player position set from ", target_node_path)
 		else:
-			#pass
-			print(Global.from_level)
-			print("Node with name '%s' does not exist" % (Global.from_level + "_pos"))
+			pass
+			#print(Global.from_level)
+			#print("Node with name '%s' does not exist" % (Global.from_level + "_pos"))
 	else:
 		player.global_position = Global.get_player_current_position()
 		
 func set_overall_initial_position():
 	Global.set_player_initial_position(Global.get_player_current_position())
-
 
 func resume_the_game() -> void:
 	get_tree().paused = false
@@ -47,9 +47,6 @@ func resume_the_game() -> void:
 	player_controller.visible = true
 	pause_ui.hide()
 
-func _process(_delta):
-	Global.set_player_current_position(player.global_position)
-	
 func _on_pause_game_pressed():
 	get_tree().paused = true
 	topui.visible = false
