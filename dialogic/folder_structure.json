@@ -129,21 +129,22 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": false
+						"folded": true
 					}
 				},
 				"Valen": {
 					"files": [
 						"timeline-1723512771.json",
 						"timeline-1723815657.json",
-						"timeline-1723958326.json"
+						"timeline-1723958326.json",
+						"timeline-1725179796.json"
 					],
 					"folders": {
 
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				},
 				"citizen3": {
