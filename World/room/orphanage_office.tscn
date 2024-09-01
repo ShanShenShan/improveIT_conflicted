@@ -943,7 +943,6 @@ tile_data = PoolIntArray( 196625, 12, 0, 262151, 0, 0, 262170, 27, 0, 262174, 28
 [node name="people" type="YSort" parent="YSort"]
 
 [node name="merricks2" parent="YSort/people" instance=ExtResource( 9 )]
-visible = false
 position = Vector2( 140, 84 )
 
 [node name="TopUi" type="CanvasLayer" parent="."]

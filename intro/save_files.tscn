@@ -75,6 +75,7 @@ margin_top = 113.0
 margin_right = 300.0
 margin_bottom = 128.0
 custom_fonts/font = SubResource( 2 )
+disabled = true
 text = "file 1"
 
 [node name="file2" type="Button" parent="Panel/MarginContainer/VBoxContainer"]

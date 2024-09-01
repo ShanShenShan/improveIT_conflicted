@@ -147,9 +147,12 @@ func check_if_loaded_data() -> void:
 	var loaded_data2 = load_from_file("user://autosave.txt")
 
 	# Check if either loaded_data or loaded_data2 is valid and not null
-	if "save_triggered" in loaded_data2:
-		Global.save_triggered = loaded_data2["save_triggered"]
-	if "save_triggered" in loaded_data:
-		Global.save_triggered = loaded_data["save_triggered"]
-	else:
+	if "save_triggered" in loaded_data2 and loaded_data2["save_triggered"]:
+		Global.save_triggered = true
+
+	if "save_triggered" in loaded_data and loaded_data["save_triggered"]:
+		Global.save_triggered = true
+
+	if not Global.save_triggered:
 		print("No valid save data found or file loading error.")
+

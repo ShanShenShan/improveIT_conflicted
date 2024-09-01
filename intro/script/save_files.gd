@@ -16,7 +16,7 @@ func _ready():
 
 	
 
-	if Global.save_triggered == true:
+	if Global.save_triggered == true or Global.save_button_click == true:
 		saving_file.load_game_button()
 		file1.text = Global.current_level
 	else:
@@ -31,7 +31,10 @@ func _ready():
 
 func _process(delta):
 	if Global.load_button_click == true:
-		auto.disabled = false
+		auto.disabled = false	
+	if Global.save_button_click == true:
+		file1.disabled = false
+	
 
 func auto_save():
 		
@@ -42,23 +45,23 @@ func auto_save():
 			#Global.save_triggered = false	
 
 func file1_pressed():
-	if Global.save_button_click == true:
-		Global.save_button_click = false
-		Global.save_triggered = true
-		file1.text = Global.get_current_level()
-		#Global.save_button_click = true
-		saving_file.save_game()
-		timer_feedback()
-		#print(Global.save_button_click)
-	else:
-		#saving_file.load_game_button()
-		if Global.load_button_click == true:
+	if Global.load_button_click == true:
 			saving_file.load_game()
 			Global.load_game_position = true
 			SceneTransition.change_scene(Global.get_map())
 			Global.load_button_click = false
 			#Global.save_triggered = false	
 			#print("hello1")
+	else:
+		if Global.save_button_click == true:
+			Global.save_triggered = true
+			file1.text = Global.get_current_level()
+			#Global.save_button_click = true
+			saving_file.save_game()
+			timer_feedback()
+			#print(Global.save_button_click)
+			#saving_file.load_game_button()
+			
 		else:
 			file1.text = "File 1"
 			#print("hello2")

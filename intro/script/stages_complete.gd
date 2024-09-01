@@ -30,8 +30,8 @@ func show_stage(stage):
 			stage1.visible = true
 			stage2.visible = false
 			current_stage = 1
-			Global.save_triggered = true
 			PlayerStats.health = 5
+			Global.save_triggered = true
 			save_n_load.auto_save_file()
 			timer.start(3)
 	elif stage == 2:
@@ -39,14 +39,16 @@ func show_stage(stage):
 			stage1.visible = false
 			stage2.visible = true
 			current_stage = 2
-			Global.save_triggered = true
 			PlayerStats.health = 5
+			Global.save_triggered = true
 			save_n_load.auto_save_file()
 			timer.start(3)
 
 func _on_Timer_timeout():
 	animation.play("fade_out")
 	if current_stage == 1:
+		
 		stage1.visible = false
 	elif current_stage == 2:
+		
 		stage2.visible = false
