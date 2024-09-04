@@ -12,8 +12,8 @@ region_rect = Rect2( 162, 13, 28, 53 )
 
 [node name="Light2D" type="Light2D" parent="Sprite"]
 texture = ExtResource( 1 )
-texture_scale = 0.5
-energy = 0.8
+texture_scale = 0.3
+energy = 0.5
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 0, -2 )

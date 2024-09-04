@@ -1,65 +1,80 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://Fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://intro/picture/spellbook/Untitled.png" type="Texture" id=2]
-[ext_resource path="res://intro/picture/spellbook/methods/add.png" type="Texture" id=3]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/insert/insert - 1.png" type="Texture" id=3]
 [ext_resource path="res://intro/script/methods.gd" type="Script" id=4]
 [ext_resource path="res://intro/picture/close.png" type="Texture" id=5]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/displaying.png" type="Texture" id=6]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/output.png" type="Texture" id=7]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/add_string.png" type="Texture" id=8]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/displaying2.png" type="Texture" id=9]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/output2.png" type="Texture" id=10]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/add_range.png" type="Texture" id=11]
-[ext_resource path="res://intro/picture/spellbook/methods/list/add/adrangeoutput.png" type="Texture" id=12]
-[ext_resource path="res://intro/picture/spellbook/methods/list/binary/binary.png" type="Texture" id=13]
-[ext_resource path="res://intro/picture/spellbook/methods/list/binary/code1.png" type="Texture" id=14]
-[ext_resource path="res://intro/picture/spellbook/methods/list/clear/clear.png" type="Texture" id=15]
-[ext_resource path="res://intro/picture/spellbook/methods/list/contains/printing1.png" type="Texture" id=16]
-[ext_resource path="res://intro/picture/spellbook/methods/list/binary/printing.png" type="Texture" id=17]
-[ext_resource path="res://intro/picture/spellbook/methods/list/binary/output.png" type="Texture" id=18]
-[ext_resource path="res://intro/picture/spellbook/methods/list/remove/before_remove.png" type="Texture" id=19]
-[ext_resource path="res://intro/picture/spellbook/methods/list/remove/remove.png" type="Texture" id=20]
-[ext_resource path="res://intro/picture/spellbook/methods/list/remove/output.png" type="Texture" id=21]
-[ext_resource path="res://intro/picture/spellbook/methods/list/remove/after_remove.png" type="Texture" id=22]
-[ext_resource path="res://intro/picture/spellbook/methods/list/removeat/removeat.png" type="Texture" id=23]
-[ext_resource path="res://intro/picture/spellbook/methods/list/removeat/output.png" type="Texture" id=24]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trimexcess/printafter.png" type="Texture" id=25]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trimexcess/output.png" type="Texture" id=26]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trimexcess/trimexcess.png" type="Texture" id=27]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trimexcess/code.png" type="Texture" id=28]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trimexcess/print.png" type="Texture" id=29]
-[ext_resource path="res://intro/picture/spellbook/methods/list/contains/printing.png" type="Texture" id=30]
-[ext_resource path="res://intro/picture/spellbook/methods/list/contains/contains.png" type="Texture" id=31]
-[ext_resource path="res://intro/picture/spellbook/methods/list/contains/output.png" type="Texture" id=32]
-[ext_resource path="res://intro/picture/spellbook/methods/list/count/code.png" type="Texture" id=33]
-[ext_resource path="res://intro/picture/spellbook/methods/list/count/dp3.png" type="Texture" id=34]
-[ext_resource path="res://intro/picture/spellbook/methods/list/count/dp1.png" type="Texture" id=35]
-[ext_resource path="res://intro/picture/spellbook/methods/list/count/output.png" type="Texture" id=36]
-[ext_resource path="res://intro/picture/spellbook/methods/list/count/count.png" type="Texture" id=37]
-[ext_resource path="res://intro/picture/spellbook/methods/list/find/dp2.png" type="Texture" id=38]
-[ext_resource path="res://intro/picture/spellbook/methods/list/find/output.png" type="Texture" id=39]
-[ext_resource path="res://intro/picture/spellbook/methods/list/find/dp3.png" type="Texture" id=40]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insert/code.png" type="Texture" id=41]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insert/dp1.png" type="Texture" id=42]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insert/output.png" type="Texture" id=43]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insert/dp3.png" type="Texture" id=44]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insert/dp2.png" type="Texture" id=45]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insertrange/code2.png" type="Texture" id=46]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insertrange/dp3.png" type="Texture" id=47]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insertrange/insertrange.png" type="Texture" id=48]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insertrange/code1.png" type="Texture" id=49]
-[ext_resource path="res://intro/picture/spellbook/methods/list/insertrange/output.png" type="Texture" id=50]
-[ext_resource path="res://intro/picture/spellbook/methods/list/items/printing.png" type="Texture" id=51]
-[ext_resource path="res://intro/picture/spellbook/methods/list/items/output.png" type="Texture" id=52]
-[ext_resource path="res://intro/picture/spellbook/methods/list/sort/d1.png" type="Texture" id=53]
-[ext_resource path="res://intro/picture/spellbook/methods/list/sort/dp3.png" type="Texture" id=54]
-[ext_resource path="res://intro/picture/spellbook/methods/list/sort/code.png" type="Texture" id=55]
-[ext_resource path="res://intro/picture/spellbook/methods/list/sort/output.png" type="Texture" id=56]
-[ext_resource path="res://intro/picture/spellbook/methods/list/sort/dp2.png" type="Texture" id=57]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trueforall/trueforall.png" type="Texture" id=58]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trueforall/output.png" type="Texture" id=59]
-[ext_resource path="res://intro/picture/spellbook/methods/list/trueforall/after.png" type="Texture" id=60]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/insert/insert - 3.png" type="Texture" id=6]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Count/Count - 3.png" type="Texture" id=7]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Insert Range/Insert Range.png" type="Texture" id=8]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Insert Range/Insert Range - 1.png" type="Texture" id=9]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/foreach/foreach - 2.png" type="Texture" id=10]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Insert Range/Insert Range - 2.png" type="Texture" id=11]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Items/output.png" type="Texture" id=12]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Count/Count - 1.png" type="Texture" id=13]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Insert Range/Insert Range - 3.png" type="Texture" id=14]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Count/Count - 2.png" type="Texture" id=15]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrimExcess/output.png" type="Texture" id=16]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Find/Find - 1.png" type="Texture" id=17]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/insert/insert.png" type="Texture" id=18]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Remove/remove.png" type="Texture" id=19]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Remove/remove-1.png" type="Texture" id=20]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Removeat/Removeat.png" type="Texture" id=21]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/insert/insert - 2.png" type="Texture" id=22]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/foreach/foreach.png" type="Texture" id=23]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Remove/remove-3.png" type="Texture" id=24]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Removeat/Removeat - 2.png" type="Texture" id=25]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Items/Items-1.png" type="Texture" id=26]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Find/Find - 3.png" type="Texture" id=27]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Remove/remove-2.png" type="Texture" id=28]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/insert/Insert - 4.png" type="Texture" id=29]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Removeat/Removeat - 3.png" type="Texture" id=30]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Removeat/Removeat - 4.png" type="Texture" id=31]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Items/Items.png" type="Texture" id=32]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Find/output.png" type="Texture" id=33]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Count/Count - 4.png" type="Texture" id=34]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Find/Find - 2.png" type="Texture" id=35]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrimExcess/TrimExcess.png" type="Texture" id=36]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Contains/Contains - 3.png" type="Texture" id=37]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Remove/remove output.png" type="Texture" id=38]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Insert Range/output.png" type="Texture" id=39]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/foreach/foreach - 1.png" type="Texture" id=40]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Removeat/Removeat - 1.png" type="Texture" id=41]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrimExcess/TrimExcess - 1.png" type="Texture" id=42]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrimExcess/TrimExcess -3.png" type="Texture" id=43]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Sort/Sort.png" type="Texture" id=44]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrimExcess/TrimExcess - 2.png" type="Texture" id=45]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Sort/Sort - 1.png" type="Texture" id=46]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Sort/Sort - 2.png" type="Texture" id=47]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Sort/Sort - 3.png" type="Texture" id=48]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Binary Search/Binary Search - 1.png" type="Texture" id=49]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Count/Count.png" type="Texture" id=50]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Contains/printing1.png" type="Texture" id=51]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Contains/output.png" type="Texture" id=52]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Binary Search/Binary Search - 2.png" type="Texture" id=53]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Binary Search/Binary Search - 3.png" type="Texture" id=54]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Binary Search/Binary Search.png" type="Texture" id=55]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Clear/Clear.png" type="Texture" id=56]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Clear/Clear - 1.png" type="Texture" id=57]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrueForAll/Trueforall - 4.png" type="Texture" id=58]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrueForAll/trueforall.png" type="Texture" id=59]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrueForAll/Trueforall - 3.png" type="Texture" id=60]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add/Add - 1.png" type="Texture" id=61]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Contains/Contains.png" type="Texture" id=62]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Contains/Contains - 2.png" type="Texture" id=63]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add/Add - 5.png" type="Texture" id=64]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add/Add - 3.png" type="Texture" id=65]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add/Add.png" type="Texture" id=66]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add/Add - 2.png" type="Texture" id=67]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add/Add - 4.png" type="Texture" id=68]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add Range/Add Range.png" type="Texture" id=69]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add Range/Add Range - 1.png" type="Texture" id=70]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Add Range/Add Range - 2.png" type="Texture" id=71]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Sort/Sort - 4.png" type="Texture" id=72]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrueForAll/output.png" type="Texture" id=73]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/TrueForAll/Trueforall - 2.png" type="Texture" id=74]
+[ext_resource path="res://intro/picture/spellbook/Enhance Methods/Find/Find.png" type="Texture" id=75]
 
 [sub_resource type="DynamicFont" id=1]
 size = 8
@@ -262,7 +277,7 @@ margin_bottom = 148.0
 [node name="image_code" type="TextureRect" parent="Control2/add_code/code1"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 3 )
+texture = ExtResource( 66 )
 
 [node name="space" type="Control" parent="Control2/add_code/code1"]
 margin_top = 82.0
@@ -340,22 +355,22 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 146.0
+margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/add_code/displaying_process"]
 margin_right = 199.0
-margin_bottom = 76.0
-texture = ExtResource( 6 )
+margin_bottom = 78.0
+texture = ExtResource( 61 )
 
 [node name="space" type="Control" parent="Control2/add_code/displaying_process"]
-margin_top = 80.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 80.0
+margin_bottom = 82.0
 
 [node name="title" type="Label" parent="Control2/add_code/displaying_process"]
-margin_top = 84.0
+margin_top = 86.0
 margin_right = 199.0
-margin_bottom = 93.0
+margin_bottom = 95.0
 custom_fonts/font = SubResource( 3 )
 text = "Displaying process"
 align = 1
@@ -363,19 +378,19 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/add_code/displaying_process"]
-margin_top = 97.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 97.0
+margin_bottom = 99.0
 
 [node name="space3" type="Control" parent="Control2/add_code/displaying_process"]
-margin_top = 101.0
+margin_top = 103.0
 margin_right = 199.0
-margin_bottom = 101.0
+margin_bottom = 103.0
 
 [node name="Label" type="Label" parent="Control2/add_code/displaying_process"]
-margin_top = 105.0
+margin_top = 107.0
 margin_right = 199.0
-margin_bottom = 113.0
+margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Can use foreach loop to display each value inside the list"
 align = 1
@@ -383,9 +398,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/add_code/displaying_process"]
-margin_top = 125.0
+margin_top = 130.0
 margin_right = 199.0
-margin_bottom = 139.0
+margin_bottom = 144.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/add_code/displaying_process/HBoxContainer"]
@@ -412,23 +427,23 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 146.0
+margin_bottom = 148.0
 
 [node name="image_code" type="TextureRect" parent="Control2/add_code/output"]
 margin_right = 199.0
-margin_bottom = 76.0
-texture = ExtResource( 7 )
+margin_bottom = 78.0
+texture = ExtResource( 67 )
 stretch_mode = 4
 
 [node name="space" type="Control" parent="Control2/add_code/output"]
-margin_top = 80.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 80.0
+margin_bottom = 82.0
 
 [node name="title" type="Label" parent="Control2/add_code/output"]
-margin_top = 84.0
+margin_top = 86.0
 margin_right = 199.0
-margin_bottom = 105.0
+margin_bottom = 107.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
 text = "Output
@@ -437,9 +452,9 @@ align = 1
 valign = 1
 
 [node name="Label" type="Label" parent="Control2/add_code/output"]
-margin_top = 109.0
+margin_top = 111.0
 margin_right = 199.0
-margin_bottom = 117.0
+margin_bottom = 119.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output using Add method."
 align = 1
@@ -447,14 +462,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/add_code/output"]
-margin_top = 121.0
+margin_top = 123.0
 margin_right = 199.0
-margin_bottom = 121.0
+margin_bottom = 123.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/add_code/output"]
-margin_top = 125.0
+margin_top = 127.0
 margin_right = 199.0
-margin_bottom = 139.0
+margin_bottom = 141.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/add_code/output/HBoxContainer"]
@@ -480,22 +495,22 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 205.0
+margin_right = 206.0
 margin_bottom = 147.0
 
 [node name="image_code" type="TextureRect" parent="Control2/add_code/code2"]
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 8 )
+texture = ExtResource( 65 )
 
 [node name="space" type="Control" parent="Control2/add_code/code2"]
 margin_top = 82.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 82.0
 
 [node name="title" type="Label" parent="Control2/add_code/code2"]
 margin_top = 86.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 95.0
 custom_fonts/font = SubResource( 3 )
 text = "Add method"
@@ -505,7 +520,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/add_code/code2"]
 margin_top = 99.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "List allows repetition that means a single piece of data can occur more than once in a list."
@@ -515,12 +530,12 @@ autowrap = true
 
 [node name="space5" type="Control" parent="Control2/add_code/code2"]
 margin_top = 122.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 122.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/add_code/code2"]
 margin_top = 126.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 140.0
 alignment = 1
 
@@ -532,13 +547,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/add_code/code2/HBoxContainer"]
 margin_left = 46.0
-margin_right = 156.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/add_code/code2/HBoxContainer"]
-margin_left = 160.0
-margin_right = 198.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -553,7 +568,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/add_code/displaying_process2"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 9 )
+texture = ExtResource( 68 )
 
 [node name="space" type="Control" parent="Control2/add_code/displaying_process2"]
 margin_top = 82.0
@@ -620,22 +635,23 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 149.0
+margin_bottom = 148.0
 
 [node name="image_code" type="TextureRect" parent="Control2/add_code/output2"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 10 )
+margin_bottom = 78.0
+texture = ExtResource( 64 )
 stretch_mode = 4
 
 [node name="space" type="Control" parent="Control2/add_code/output2"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 83.0
+margin_bottom = 82.0
 
 [node name="title" type="Label" parent="Control2/add_code/output2"]
-margin_top = 87.0
+margin_top = 86.0
 margin_right = 199.0
+margin_bottom = 107.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
 text = "Output
@@ -644,9 +660,9 @@ align = 1
 valign = 1
 
 [node name="Label" type="Label" parent="Control2/add_code/output2"]
-margin_top = 98.0
+margin_top = 111.0
 margin_right = 199.0
-margin_bottom = 120.0
+margin_bottom = 119.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output using Add method."
 align = 1
@@ -654,14 +670,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/add_code/output2"]
-margin_top = 124.0
+margin_top = 123.0
 margin_right = 199.0
-margin_bottom = 124.0
+margin_bottom = 123.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/add_code/output2"]
-margin_top = 128.0
+margin_top = 127.0
 margin_right = 199.0
-margin_bottom = 142.0
+margin_bottom = 141.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/add_code/output2/HBoxContainer"]
@@ -699,7 +715,7 @@ margin_bottom = 147.0
 [node name="image_code" type="TextureRect" parent="Control2/add_range/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 3 )
+texture = ExtResource( 69 )
 
 [node name="space" type="Control" parent="Control2/add_range/code3"]
 margin_top = 82.0
@@ -762,17 +778,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/add_range/displaying_process3"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 11 )
+margin_bottom = 78.0
+texture = ExtResource( 70 )
 
 [node name="title" type="Label" parent="Control2/add_range/displaying_process3"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Add RaNGE"
 align = 1
@@ -780,14 +796,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/add_range/displaying_process3"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/add_range/displaying_process3"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "It adds elements of the specified collection at the end of a 2nd List"
 align = 1
@@ -795,9 +811,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/add_range/displaying_process3"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/add_range/displaying_process3/HBoxContainer"]
@@ -823,18 +839,18 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 205.0
+margin_right = 206.0
 margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/add_range/output"]
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 12 )
+texture = ExtResource( 71 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/add_range/output"]
 margin_top = 82.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 103.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
@@ -845,7 +861,7 @@ valign = 1
 
 [node name="Label" type="Label" parent="Control2/add_range/output"]
 margin_top = 107.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output of add range method after using foreach loop."
@@ -855,7 +871,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/add_range/output"]
 margin_top = 130.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 144.0
 alignment = 1
 
@@ -867,13 +883,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/add_range/output/HBoxContainer"]
 margin_left = 46.0
-margin_right = 156.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/add_range/output/HBoxContainer"]
-margin_left = 160.0
-margin_right = 198.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 disabled = true
@@ -896,7 +912,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/binary_search/code3"]
 margin_right = 202.0
 margin_bottom = 78.0
-texture = ExtResource( 14 )
+texture = ExtResource( 55 )
 
 [node name="space" type="Control" parent="Control2/binary_search/code3"]
 margin_top = 82.0
@@ -958,17 +974,17 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 206.0
-margin_bottom = 143.0
+margin_right = 209.0
+margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/binary_search/displaying_process3"]
-margin_right = 199.0
+margin_right = 202.0
 margin_bottom = 78.0
-texture = ExtResource( 13 )
+texture = ExtResource( 49 )
 
 [node name="title" type="Label" parent="Control2/binary_search/displaying_process3"]
 margin_top = 82.0
-margin_right = 199.0
+margin_right = 202.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Binary Search Method"
@@ -978,12 +994,12 @@ autowrap = true
 
 [node name="space2" type="Control" parent="Control2/binary_search/displaying_process3"]
 margin_top = 95.0
-margin_right = 199.0
+margin_right = 202.0
 margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/binary_search/displaying_process3"]
 margin_top = 99.0
-margin_right = 199.0
+margin_right = 202.0
 margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Search the element and returns an index of the element. "
@@ -993,7 +1009,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/binary_search/displaying_process3"]
 margin_top = 122.0
-margin_right = 199.0
+margin_right = 202.0
 margin_bottom = 136.0
 alignment = 1
 
@@ -1005,13 +1021,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/binary_search/displaying_process3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 157.0
+margin_right = 160.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/binary_search/displaying_process3/HBoxContainer"]
-margin_left = 161.0
-margin_right = 199.0
+margin_left = 164.0
+margin_right = 202.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -1025,13 +1041,13 @@ margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/binary_search/displaying_process4"]
 margin_right = 202.0
-margin_bottom = 77.0
-texture = ExtResource( 17 )
+margin_bottom = 78.0
+texture = ExtResource( 53 )
 
 [node name="title" type="Label" parent="Control2/binary_search/displaying_process4"]
-margin_top = 81.0
+margin_top = 82.0
 margin_right = 202.0
-margin_bottom = 90.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Binary Search Method"
 align = 1
@@ -1039,14 +1055,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/binary_search/displaying_process4"]
-margin_top = 94.0
+margin_top = 95.0
 margin_right = 202.0
-margin_bottom = 94.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/binary_search/displaying_process4"]
-margin_top = 98.0
+margin_top = 99.0
 margin_right = 202.0
-margin_bottom = 117.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Directway of printing search element and the value index"
 align = 1
@@ -1054,9 +1070,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/binary_search/displaying_process4"]
-margin_top = 121.0
+margin_top = 122.0
 margin_right = 202.0
-margin_bottom = 135.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/binary_search/displaying_process4/HBoxContainer"]
@@ -1083,18 +1099,18 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 209.0
-margin_bottom = 150.0
+margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/binary_search/output"]
 margin_right = 202.0
-margin_bottom = 77.0
-texture = ExtResource( 18 )
+margin_bottom = 78.0
+texture = ExtResource( 54 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/binary_search/output"]
-margin_top = 81.0
+margin_top = 82.0
 margin_right = 202.0
-margin_bottom = 102.0
+margin_bottom = 103.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
 text = "Output
@@ -1103,9 +1119,9 @@ align = 1
 valign = 1
 
 [node name="Label" type="Label" parent="Control2/binary_search/output"]
-margin_top = 106.0
+margin_top = 107.0
 margin_right = 202.0
-margin_bottom = 125.0
+margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output of binary search method after using console.writeline."
 align = 1
@@ -1113,9 +1129,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/binary_search/output"]
-margin_top = 129.0
-margin_right = 199.0
-margin_bottom = 143.0
+margin_top = 130.0
+margin_right = 202.0
+margin_bottom = 144.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/binary_search/output/HBoxContainer"]
@@ -1126,13 +1142,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/binary_search/output/HBoxContainer"]
 margin_left = 46.0
-margin_right = 157.0
+margin_right = 160.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/binary_search/output/HBoxContainer"]
-margin_left = 161.0
-margin_right = 199.0
+margin_left = 164.0
+margin_right = 202.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 disabled = true
@@ -1153,7 +1169,7 @@ margin_bottom = 147.0
 [node name="image_code" type="TextureRect" parent="Control2/clear/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 14 )
+texture = ExtResource( 56 )
 
 [node name="space" type="Control" parent="Control2/clear/code3"]
 margin_top = 82.0
@@ -1216,17 +1232,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 142.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/clear/displaying_process3"]
 margin_right = 199.0
-margin_bottom = 77.0
-texture = ExtResource( 15 )
+margin_bottom = 78.0
+texture = ExtResource( 57 )
 
 [node name="title" type="Label" parent="Control2/clear/displaying_process3"]
-margin_top = 81.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 90.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Clear Method"
 align = 1
@@ -1234,14 +1250,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/clear/displaying_process3"]
-margin_top = 94.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 94.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/clear/displaying_process3"]
-margin_top = 98.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 117.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "It Removes all the elements from a List.
 "
@@ -1250,9 +1266,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/clear/displaying_process3"]
-margin_top = 121.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 135.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/clear/displaying_process3/HBoxContainer"]
@@ -1272,65 +1288,7 @@ margin_left = 161.0
 margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
-text = "  Next   "
-
-[node name="output" type="VBoxContainer" parent="Control2/clear"]
-visible = false
-margin_left = 7.0
-margin_top = 7.0
-margin_right = 205.0
-margin_bottom = 151.0
-
-[node name="image_code" type="TextureRect" parent="Control2/clear/output"]
-margin_right = 198.0
-margin_bottom = 78.0
-texture = ExtResource( 12 )
-stretch_mode = 4
-
-[node name="title" type="Label" parent="Control2/clear/output"]
-margin_top = 82.0
-margin_right = 198.0
-margin_bottom = 103.0
-size_flags_vertical = 1
-custom_fonts/font = SubResource( 3 )
-text = "Output
-"
-align = 1
-valign = 1
-
-[node name="Label" type="Label" parent="Control2/clear/output"]
-margin_top = 107.0
-margin_right = 198.0
-margin_bottom = 126.0
-custom_fonts/font = SubResource( 4 )
-text = "Final output of add range method after using foreach loop."
-align = 1
-valign = 1
-autowrap = true
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Control2/clear/output"]
-margin_top = 130.0
-margin_right = 198.0
-margin_bottom = 144.0
-alignment = 1
-
-[node name="previous" type="Button" parent="Control2/clear/output/HBoxContainer"]
-margin_right = 42.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 5 )
-text = "Previous"
-
-[node name="Control" type="Control" parent="Control2/clear/output/HBoxContainer"]
-margin_left = 46.0
-margin_right = 156.0
-margin_bottom = 14.0
-size_flags_horizontal = 3
-
-[node name="next" type="Button" parent="Control2/clear/output/HBoxContainer"]
-margin_left = 160.0
-margin_right = 198.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 5 )
+disabled = true
 text = "  Next   "
 
 [node name="contains" type="PanelContainer" parent="Control2"]
@@ -1348,7 +1306,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/contains/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 14 )
+texture = ExtResource( 62 )
 
 [node name="title" type="Label" parent="Control2/contains/code3"]
 margin_top = 82.0
@@ -1406,7 +1364,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/contains/displaying_process3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 16 )
+texture = ExtResource( 51 )
 
 [node name="title" type="Label" parent="Control2/contains/displaying_process3"]
 margin_top = 82.0
@@ -1468,7 +1426,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/contains/displaying_process4"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 31 )
+texture = ExtResource( 63 )
 
 [node name="title" type="Label" parent="Control2/contains/displaying_process4"]
 margin_top = 82.0
@@ -1525,12 +1483,12 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 143.0
+margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/contains/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 30 )
+texture = ExtResource( 37 )
 
 [node name="title" type="Label" parent="Control2/contains/displaying_process5"]
 margin_top = 82.0
@@ -1592,7 +1550,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/contains/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 32 )
+texture = ExtResource( 52 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/contains/output"]
@@ -1653,17 +1611,17 @@ margin_bottom = 11.0
 [node name="code3" type="VBoxContainer" parent="Control2/count"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 139.0
 
 [node name="image_code" type="TextureRect" parent="Control2/count/code3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 33 )
+texture = ExtResource( 50 )
 
 [node name="title" type="Label" parent="Control2/count/code3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Count method"
@@ -1673,7 +1631,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/count/code3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 114.0
 custom_fonts/font = SubResource( 4 )
 text = "To used the stated method there must be an existing list that contains the value to be counted."
@@ -1683,7 +1641,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/count/code3"]
 margin_top = 118.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 132.0
 alignment = 1
 
@@ -1696,13 +1654,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/count/code3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/count/code3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -1712,17 +1670,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/count/displaying_process3"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 35 )
+margin_bottom = 78.0
+texture = ExtResource( 13 )
 
 [node name="title" type="Label" parent="Control2/count/displaying_process3"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Count Method"
 align = 1
@@ -1730,14 +1688,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/count/displaying_process3"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/count/displaying_process3"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying values inside the list using the foreach method."
 align = 1
@@ -1745,9 +1703,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/count/displaying_process3"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/count/displaying_process3/HBoxContainer"]
@@ -1774,17 +1732,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/count/displaying_process4"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 37 )
+margin_bottom = 78.0
+texture = ExtResource( 15 )
 
 [node name="title" type="Label" parent="Control2/count/displaying_process4"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Count Method"
 align = 1
@@ -1792,14 +1750,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/count/displaying_process4"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/count/displaying_process4"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Using Contain method it Returns the total number of elements exists in the List. "
 align = 1
@@ -1807,9 +1765,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/count/displaying_process4"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/count/displaying_process4/HBoxContainer"]
@@ -1836,12 +1794,12 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 151.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/count/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 34 )
+texture = ExtResource( 7 )
 
 [node name="title" type="Label" parent="Control2/count/displaying_process5"]
 margin_top = 82.0
@@ -1903,7 +1861,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/count/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 36 )
+texture = ExtResource( 34 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/count/output"]
@@ -1964,17 +1922,17 @@ margin_bottom = 11.0
 [node name="code3" type="VBoxContainer" parent="Control2/find"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 139.0
 
 [node name="image_code" type="TextureRect" parent="Control2/find/code3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 33 )
+texture = ExtResource( 75 )
 
 [node name="title" type="Label" parent="Control2/find/code3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "find method"
@@ -1984,7 +1942,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/find/code3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 114.0
 custom_fonts/font = SubResource( 4 )
 text = "To used the stated method there must be an existing list that contains the value to be find."
@@ -1994,7 +1952,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/find/code3"]
 margin_top = 118.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 132.0
 alignment = 1
 
@@ -2007,13 +1965,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/find/code3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/find/code3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -2023,17 +1981,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/find/displaying_process3"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 35 )
+margin_bottom = 78.0
+texture = ExtResource( 17 )
 
 [node name="title" type="Label" parent="Control2/find/displaying_process3"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Find Method"
 align = 1
@@ -2041,14 +1999,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/find/displaying_process3"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/find/displaying_process3"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying values inside the list using the foreach method."
 align = 1
@@ -2056,9 +2014,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/find/displaying_process3"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/find/displaying_process3/HBoxContainer"]
@@ -2090,7 +2048,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/find/displaying_process4"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 38 )
+texture = ExtResource( 35 )
 
 [node name="title" type="Label" parent="Control2/find/displaying_process4"]
 margin_top = 82.0
@@ -2152,7 +2110,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/find/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 40 )
+texture = ExtResource( 27 )
 
 [node name="title" type="Label" parent="Control2/find/displaying_process5"]
 margin_top = 82.0
@@ -2214,7 +2172,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/find/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 39 )
+texture = ExtResource( 33 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/find/output"]
@@ -2279,7 +2237,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/foreach/code1"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 3 )
+texture = ExtResource( 23 )
 
 [node name="space" type="Control" parent="Control2/foreach/code1"]
 margin_top = 82.0
@@ -2337,22 +2295,22 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 149.0
+margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/foreach/displaying_process"]
 margin_right = 199.0
-margin_bottom = 76.0
-texture = ExtResource( 6 )
+margin_bottom = 78.0
+texture = ExtResource( 40 )
 
 [node name="space" type="Control" parent="Control2/foreach/displaying_process"]
-margin_top = 80.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 80.0
+margin_bottom = 82.0
 
 [node name="title" type="Label" parent="Control2/foreach/displaying_process"]
-margin_top = 84.0
+margin_top = 86.0
 margin_right = 199.0
-margin_bottom = 93.0
+margin_bottom = 95.0
 custom_fonts/font = SubResource( 3 )
 text = "foreach method"
 align = 1
@@ -2360,19 +2318,19 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/foreach/displaying_process"]
-margin_top = 97.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 97.0
+margin_bottom = 99.0
 
 [node name="space3" type="Control" parent="Control2/foreach/displaying_process"]
-margin_top = 101.0
+margin_top = 103.0
 margin_right = 199.0
-margin_bottom = 101.0
+margin_bottom = 103.0
 
 [node name="Label" type="Label" parent="Control2/foreach/displaying_process"]
-margin_top = 105.0
+margin_top = 107.0
 margin_right = 199.0
-margin_bottom = 124.0
+margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Can use foreach loop to display each value inside the list"
 align = 1
@@ -2380,9 +2338,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/foreach/displaying_process"]
-margin_top = 128.0
+margin_top = 130.0
 margin_right = 199.0
-margin_bottom = 142.0
+margin_bottom = 144.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/foreach/displaying_process/HBoxContainer"]
@@ -2408,18 +2366,18 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 205.0
+margin_right = 206.0
 margin_bottom = 140.0
 
 [node name="image_code" type="TextureRect" parent="Control2/foreach/output"]
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 7 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/foreach/output"]
 margin_top = 82.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 103.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
@@ -2430,7 +2388,7 @@ valign = 1
 
 [node name="Label" type="Label" parent="Control2/foreach/output"]
 margin_top = 107.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 115.0
 custom_fonts/font = SubResource( 4 )
 text = "foreach methods final output"
@@ -2440,7 +2398,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/foreach/output"]
 margin_top = 119.0
-margin_right = 198.0
+margin_right = 199.0
 margin_bottom = 133.0
 alignment = 1
 
@@ -2452,13 +2410,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/foreach/output/HBoxContainer"]
 margin_left = 46.0
-margin_right = 156.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/foreach/output/HBoxContainer"]
-margin_left = 160.0
-margin_right = 198.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 disabled = true
@@ -2473,7 +2431,6 @@ margin_right = 9.0
 margin_bottom = 11.0
 
 [node name="code3" type="VBoxContainer" parent="Control2/insert"]
-visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
@@ -2482,7 +2439,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/insert/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 41 )
+texture = ExtResource( 18 )
 
 [node name="title" type="Label" parent="Control2/insert/code3"]
 margin_top = 82.0
@@ -2541,7 +2498,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/insert/displaying_process3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 42 )
+texture = ExtResource( 3 )
 
 [node name="title" type="Label" parent="Control2/insert/displaying_process3"]
 margin_top = 82.0
@@ -2603,7 +2560,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/insert/displaying_process4"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 45 )
+texture = ExtResource( 22 )
 
 [node name="title" type="Label" parent="Control2/insert/displaying_process4"]
 margin_top = 82.0
@@ -2656,6 +2613,7 @@ custom_fonts/font = SubResource( 5 )
 text = "  Next   "
 
 [node name="displaying_process5" type="VBoxContainer" parent="Control2/insert"]
+visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
@@ -2664,7 +2622,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/insert/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 44 )
+texture = ExtResource( 6 )
 
 [node name="title" type="Label" parent="Control2/insert/displaying_process5"]
 margin_top = 82.0
@@ -2720,18 +2678,18 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/insert/output"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 43 )
+texture = ExtResource( 29 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/insert/output"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 103.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
@@ -2742,7 +2700,7 @@ valign = 1
 
 [node name="Label" type="Label" parent="Control2/insert/output"]
 margin_top = 107.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output of  insert method after adding value in a existed list."
@@ -2752,7 +2710,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/insert/output"]
 margin_top = 130.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 144.0
 alignment = 1
 
@@ -2764,13 +2722,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/insert/output/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/insert/output/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 disabled = true
@@ -2787,17 +2745,17 @@ margin_bottom = 11.0
 [node name="code3" type="VBoxContainer" parent="Control2/insert_range"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/insert_range/code3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 49 )
+texture = ExtResource( 8 )
 
 [node name="title" type="Label" parent="Control2/insert_range/code3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "insert Range method"
@@ -2807,7 +2765,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/insert_range/code3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 125.0
 custom_fonts/font = SubResource( 4 )
 text = "To used the stated method there must be a two existing list where you will  add list value into 
@@ -2818,7 +2776,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/insert_range/code3"]
 margin_top = 129.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 143.0
 alignment = 1
 
@@ -2831,13 +2789,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/insert_range/code3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/insert_range/code3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -2852,7 +2810,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/insert_range/displaying_process3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 46 )
+texture = ExtResource( 9 )
 
 [node name="title" type="Label" parent="Control2/insert_range/displaying_process3"]
 margin_top = 82.0
@@ -2908,17 +2866,17 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/insert_range/displaying_process4"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 48 )
+texture = ExtResource( 11 )
 
 [node name="title" type="Label" parent="Control2/insert_range/displaying_process4"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Insert Range Method"
@@ -2928,12 +2886,12 @@ autowrap = true
 
 [node name="space2" type="Control" parent="Control2/insert_range/displaying_process4"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/insert_range/displaying_process4"]
 margin_top = 99.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Using the insert Range method it Inserts elements of another list collection at the specified index."
@@ -2943,7 +2901,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/insert_range/displaying_process4"]
 margin_top = 122.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 136.0
 alignment = 1
 
@@ -2955,13 +2913,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/insert_range/displaying_process4/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/insert_range/displaying_process4/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -2970,17 +2928,17 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/insert_range/displaying_process5"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 47 )
+texture = ExtResource( 14 )
 
 [node name="title" type="Label" parent="Control2/insert_range/displaying_process5"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Insert Method"
@@ -2990,12 +2948,12 @@ autowrap = true
 
 [node name="space2" type="Control" parent="Control2/insert_range/displaying_process5"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/insert_range/displaying_process5"]
 margin_top = 99.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying the value of the list after using the insert range method."
@@ -3005,7 +2963,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/insert_range/displaying_process5"]
 margin_top = 122.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 136.0
 alignment = 1
 
@@ -3017,13 +2975,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/insert_range/displaying_process5/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/insert_range/displaying_process5/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -3032,18 +2990,18 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/insert_range/output"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 50 )
+texture = ExtResource( 39 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/insert_range/output"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 103.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
@@ -3054,7 +3012,7 @@ valign = 1
 
 [node name="Label" type="Label" parent="Control2/insert_range/output"]
 margin_top = 107.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output of  insert range method after adding list value into another existed list."
@@ -3064,7 +3022,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/insert_range/output"]
 margin_top = 130.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 144.0
 alignment = 1
 
@@ -3076,13 +3034,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/insert_range/output/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/insert_range/output/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 disabled = true
@@ -3103,7 +3061,7 @@ margin_bottom = 139.0
 [node name="image_code" type="TextureRect" parent="Control2/remove/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 14 )
+texture = ExtResource( 19 )
 
 [node name="title" type="Label" parent="Control2/remove/code3"]
 margin_top = 82.0
@@ -3218,17 +3176,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 141.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/remove/displaying_process4"]
 margin_right = 199.0
-margin_bottom = 76.0
-texture = ExtResource( 19 )
+margin_bottom = 78.0
+texture = ExtResource( 28 )
 
 [node name="title" type="Label" parent="Control2/remove/displaying_process4"]
-margin_top = 80.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 89.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Remove Method"
 align = 1
@@ -3236,14 +3194,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/remove/displaying_process4"]
-margin_top = 93.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 93.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/remove/displaying_process4"]
-margin_top = 97.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 116.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "printing values from intlist before using remove method."
 align = 1
@@ -3251,9 +3209,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/remove/displaying_process4"]
-margin_top = 120.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 134.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/remove/displaying_process4/HBoxContainer"]
@@ -3285,7 +3243,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/remove/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 22 )
+texture = ExtResource( 24 )
 
 [node name="title" type="Label" parent="Control2/remove/displaying_process5"]
 margin_top = 82.0
@@ -3347,7 +3305,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/remove/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 21 )
+texture = ExtResource( 38 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/remove/output"]
@@ -3411,7 +3369,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/removeat/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 14 )
+texture = ExtResource( 21 )
 
 [node name="title" type="Label" parent="Control2/removeat/code3"]
 margin_top = 82.0
@@ -3469,7 +3427,7 @@ margin_bottom = 132.0
 [node name="image_code" type="TextureRect" parent="Control2/removeat/displaying_process3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 23 )
+texture = ExtResource( 41 )
 
 [node name="title" type="Label" parent="Control2/removeat/displaying_process3"]
 margin_top = 82.0
@@ -3526,17 +3484,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 141.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/removeat/displaying_process4"]
 margin_right = 199.0
-margin_bottom = 76.0
-texture = ExtResource( 19 )
+margin_bottom = 78.0
+texture = ExtResource( 25 )
 
 [node name="title" type="Label" parent="Control2/removeat/displaying_process4"]
-margin_top = 80.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 89.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "Removeat Method"
 align = 1
@@ -3544,14 +3502,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/removeat/displaying_process4"]
-margin_top = 93.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 93.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/removeat/displaying_process4"]
-margin_top = 97.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 116.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "printing values from intlist before using removeat method."
 align = 1
@@ -3559,9 +3517,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/removeat/displaying_process4"]
-margin_top = 120.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 134.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/removeat/displaying_process4/HBoxContainer"]
@@ -3593,7 +3551,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/removeat/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 22 )
+texture = ExtResource( 30 )
 
 [node name="title" type="Label" parent="Control2/removeat/displaying_process5"]
 margin_top = 82.0
@@ -3655,7 +3613,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/removeat/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 24 )
+texture = ExtResource( 31 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/removeat/output"]
@@ -3720,7 +3678,7 @@ margin_bottom = 139.0
 [node name="image_code" type="TextureRect" parent="Control2/trimexcess/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 28 )
+texture = ExtResource( 36 )
 
 [node name="title" type="Label" parent="Control2/trimexcess/code3"]
 margin_top = 82.0
@@ -3773,17 +3731,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/trimexcess/displaying_process3"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 29 )
+margin_bottom = 78.0
+texture = ExtResource( 42 )
 
 [node name="title" type="Label" parent="Control2/trimexcess/displaying_process3"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "TrimExcess Method"
 align = 1
@@ -3791,14 +3749,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/trimexcess/displaying_process3"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/trimexcess/displaying_process3"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying the number of capacity and counting the value inside of a list"
 align = 1
@@ -3806,9 +3764,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/trimexcess/displaying_process3"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/trimexcess/displaying_process3/HBoxContainer"]
@@ -3835,17 +3793,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/trimexcess/displaying_process4"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 27 )
+margin_bottom = 78.0
+texture = ExtResource( 45 )
 
 [node name="title" type="Label" parent="Control2/trimexcess/displaying_process4"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "TrimExcess Method"
 align = 1
@@ -3853,14 +3811,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/trimexcess/displaying_process4"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/trimexcess/displaying_process4"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Used the TrimExcess methodto trim the capacity to match the count"
 align = 1
@@ -3868,9 +3826,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/trimexcess/displaying_process4"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/trimexcess/displaying_process4/HBoxContainer"]
@@ -3897,17 +3855,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/trimexcess/displaying_process5"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 25 )
+margin_bottom = 78.0
+texture = ExtResource( 43 )
 
 [node name="title" type="Label" parent="Control2/trimexcess/displaying_process5"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "TrimExcess Method"
 align = 1
@@ -3915,14 +3873,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/trimexcess/displaying_process5"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/trimexcess/displaying_process5"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying the capacity and counting the values inside a list after using TrimExcess method."
 align = 1
@@ -3930,9 +3888,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/trimexcess/displaying_process5"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/trimexcess/displaying_process5/HBoxContainer"]
@@ -3964,7 +3922,7 @@ margin_bottom = 151.0
 [node name="image_code" type="TextureRect" parent="Control2/trimexcess/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 26 )
+texture = ExtResource( 16 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/trimexcess/output"]
@@ -4031,7 +3989,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/items/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 33 )
+texture = ExtResource( 32 )
 
 [node name="title" type="Label" parent="Control2/items/code3"]
 margin_top = 82.0
@@ -4089,7 +4047,7 @@ margin_bottom = 154.0
 [node name="image_code" type="TextureRect" parent="Control2/items/displaying_process3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 51 )
+texture = ExtResource( 26 )
 
 [node name="title" type="Label" parent="Control2/items/displaying_process3"]
 margin_top = 82.0
@@ -4153,7 +4111,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/items/output"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 52 )
+texture = ExtResource( 12 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/items/output"]
@@ -4215,17 +4173,17 @@ margin_bottom = 11.0
 [node name="code3" type="VBoxContainer" parent="Control2/sort"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
-margin_bottom = 151.0
+margin_right = 206.0
+margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/sort/code3"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 55 )
+texture = ExtResource( 44 )
 
 [node name="title" type="Label" parent="Control2/sort/code3"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "sort method"
@@ -4235,7 +4193,7 @@ autowrap = true
 
 [node name="Label" type="Label" parent="Control2/sort/code3"]
 margin_top = 95.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 125.0
 custom_fonts/font = SubResource( 4 )
 text = "To used the stated method there must be an existing list that contains the value to be Sorts in ascending order. "
@@ -4245,7 +4203,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/sort/code3"]
 margin_top = 129.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 143.0
 alignment = 1
 
@@ -4258,13 +4216,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/sort/code3/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/sort/code3/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 text = "  Next   "
@@ -4274,17 +4232,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 155.0
+margin_bottom = 154.0
 
 [node name="image_code" type="TextureRect" parent="Control2/sort/displaying_process3"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 53 )
+margin_bottom = 78.0
+texture = ExtResource( 46 )
 
 [node name="title" type="Label" parent="Control2/sort/displaying_process3"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "sort Method"
 align = 1
@@ -4292,14 +4250,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/sort/displaying_process3"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/sort/displaying_process3"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 130.0
+margin_bottom = 129.0
 custom_fonts/font = SubResource( 4 )
 text = "Displaying the values of the list before using the sort method to know the differences.
 "
@@ -4308,9 +4266,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/sort/displaying_process3"]
-margin_top = 134.0
+margin_top = 133.0
 margin_right = 199.0
-margin_bottom = 148.0
+margin_bottom = 147.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/sort/displaying_process3/HBoxContainer"]
@@ -4337,17 +4295,17 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 
 [node name="image_code" type="TextureRect" parent="Control2/sort/displaying_process4"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 57 )
+margin_bottom = 78.0
+texture = ExtResource( 47 )
 
 [node name="title" type="Label" parent="Control2/sort/displaying_process4"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 custom_fonts/font = SubResource( 3 )
 text = "sort  Method"
 align = 1
@@ -4355,14 +4313,14 @@ valign = 1
 autowrap = true
 
 [node name="space2" type="Control" parent="Control2/sort/displaying_process4"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 96.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="Control2/sort/displaying_process4"]
-margin_top = 100.0
+margin_top = 99.0
 margin_right = 199.0
-margin_bottom = 119.0
+margin_bottom = 118.0
 custom_fonts/font = SubResource( 4 )
 text = "Using sort method it rearrange all of the elements in a list in ascending order.. "
 align = 1
@@ -4370,9 +4328,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/sort/displaying_process4"]
-margin_top = 123.0
+margin_top = 122.0
 margin_right = 199.0
-margin_bottom = 137.0
+margin_bottom = 136.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/sort/displaying_process4/HBoxContainer"]
@@ -4404,7 +4362,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/sort/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 54 )
+texture = ExtResource( 48 )
 
 [node name="title" type="Label" parent="Control2/sort/displaying_process5"]
 margin_top = 82.0
@@ -4460,18 +4418,18 @@ text = "  Next   "
 visible = false
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 207.0
+margin_right = 206.0
 margin_bottom = 151.0
 
 [node name="image_code" type="TextureRect" parent="Control2/sort/output"]
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 56 )
+texture = ExtResource( 72 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/sort/output"]
 margin_top = 82.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 103.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
@@ -4482,7 +4440,7 @@ valign = 1
 
 [node name="Label" type="Label" parent="Control2/sort/output"]
 margin_top = 107.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output of sort method after using it and diplaying its values."
@@ -4492,7 +4450,7 @@ autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/sort/output"]
 margin_top = 130.0
-margin_right = 200.0
+margin_right = 199.0
 margin_bottom = 144.0
 alignment = 1
 
@@ -4504,13 +4462,13 @@ text = "Previous"
 
 [node name="Control" type="Control" parent="Control2/sort/output/HBoxContainer"]
 margin_left = 46.0
-margin_right = 158.0
+margin_right = 157.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="next" type="Button" parent="Control2/sort/output/HBoxContainer"]
-margin_left = 162.0
-margin_right = 200.0
+margin_left = 161.0
+margin_right = 199.0
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 5 )
 disabled = true
@@ -4533,7 +4491,7 @@ margin_bottom = 150.0
 [node name="image_code" type="TextureRect" parent="Control2/trueforall/code3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 33 )
+texture = ExtResource( 59 )
 
 [node name="title" type="Label" parent="Control2/trueforall/code3"]
 margin_top = 82.0
@@ -4591,7 +4549,7 @@ margin_bottom = 154.0
 [node name="image_code" type="TextureRect" parent="Control2/trueforall/displaying_process3"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 16 )
+texture = ExtResource( 74 )
 
 [node name="title" type="Label" parent="Control2/trueforall/displaying_process3"]
 margin_top = 82.0
@@ -4654,7 +4612,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/trueforall/displaying_process4"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 58 )
+texture = ExtResource( 60 )
 
 [node name="title" type="Label" parent="Control2/trueforall/displaying_process4"]
 margin_top = 82.0
@@ -4716,7 +4674,7 @@ margin_bottom = 143.0
 [node name="image_code" type="TextureRect" parent="Control2/trueforall/displaying_process5"]
 margin_right = 199.0
 margin_bottom = 78.0
-texture = ExtResource( 60 )
+texture = ExtResource( 58 )
 
 [node name="title" type="Label" parent="Control2/trueforall/displaying_process5"]
 margin_top = 82.0
@@ -4773,18 +4731,18 @@ visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 206.0
-margin_bottom = 151.0
+margin_bottom = 150.0
 
 [node name="image_code" type="TextureRect" parent="Control2/trueforall/output"]
 margin_right = 199.0
-margin_bottom = 79.0
-texture = ExtResource( 59 )
+margin_bottom = 78.0
+texture = ExtResource( 73 )
 stretch_mode = 4
 
 [node name="title" type="Label" parent="Control2/trueforall/output"]
-margin_top = 83.0
+margin_top = 82.0
 margin_right = 199.0
-margin_bottom = 92.0
+margin_bottom = 91.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 3 )
 text = "Output"
@@ -4792,9 +4750,9 @@ align = 1
 valign = 1
 
 [node name="Label" type="Label" parent="Control2/trueforall/output"]
-margin_top = 96.0
+margin_top = 95.0
 margin_right = 199.0
-margin_bottom = 126.0
+margin_bottom = 125.0
 custom_fonts/font = SubResource( 4 )
 text = "Final output of true to all method after using it and diplaying its values.
 "
@@ -4803,9 +4761,9 @@ valign = 1
 autowrap = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control2/trueforall/output"]
-margin_top = 130.0
+margin_top = 129.0
 margin_right = 199.0
-margin_bottom = 144.0
+margin_bottom = 143.0
 alignment = 1
 
 [node name="previous" type="Button" parent="Control2/trueforall/output/HBoxContainer"]

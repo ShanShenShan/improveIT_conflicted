@@ -818,68 +818,77 @@ position = Vector2( 66, 225 )
 position = Vector2( 424, 153 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D2" type="Light2D" parent="objects/lighting"]
 position = Vector2( 472, 154 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D3" type="Light2D" parent="objects/lighting"]
 position = Vector2( 423, 265 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D4" type="Light2D" parent="objects/lighting"]
 position = Vector2( 473, 266 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D5" type="Light2D" parent="objects/lighting"]
 position = Vector2( 56, 266 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D6" type="Light2D" parent="objects/lighting"]
 position = Vector2( 88, 154 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D7" type="Light2D" parent="objects/lighting"]
 position = Vector2( 40, 154 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D8" type="Light2D" parent="objects/lighting"]
 position = Vector2( 424, 9 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D9" type="Light2D" parent="objects/lighting"]
 position = Vector2( 503, 10 )
 texture = ExtResource( 16 )
 texture_scale = 0.3
+energy = 0.5
 
 [node name="Light2D10" type="Light2D" parent="objects/lighting"]
 position = Vector2( 248, 76 )
 texture = ExtResource( 16 )
-energy = 0.8
+energy = 0.5
 
 [node name="Light2D11" type="Light2D" parent="objects/lighting"]
 position = Vector2( 249, 286 )
 texture = ExtResource( 16 )
-energy = 0.8
+energy = 0.5
 
 [node name="Light2D12" type="Light2D" parent="objects/lighting"]
 position = Vector2( 397, 90 )
 texture = ExtResource( 16 )
 texture_scale = 0.4
-energy = 0.8
+energy = 0.5
 
 [node name="Light2D13" type="Light2D" parent="objects/lighting"]
 position = Vector2( 96, 72 )
 texture = ExtResource( 16 )
 texture_scale = 0.8
-energy = 0.8
+energy = 0.5
 
 [node name="Light2D14" type="Light2D" parent="objects/lighting"]
 position = Vector2( 393, 329 )

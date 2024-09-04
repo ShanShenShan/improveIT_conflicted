@@ -149,9 +149,13 @@ func check_if_loaded_data() -> void:
 	# Check if either loaded_data or loaded_data2 is valid and not null
 	if "save_triggered" in loaded_data2 and loaded_data2["save_triggered"]:
 		Global.save_triggered = true
+		Global2.badge1 = loaded_data["badge1"]
+		Global2.badge2 = loaded_data["badge2"]
 
 	if "save_triggered" in loaded_data and loaded_data["save_triggered"]:
 		Global.save_triggered = true
+		Global2.badge1 = loaded_data["badge1"]
+		Global2.badge2 = loaded_data["badge2"]
 
 	if not Global.save_triggered:
 		print("No valid save data found or file loading error.")

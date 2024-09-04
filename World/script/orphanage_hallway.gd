@@ -15,7 +15,6 @@ var staring_player_position = Vector2(301,102)
 func _ready():
 	set_overall_initial_position()
 	set_player_position()
-	
 	resume.connect("pressed", self, "resume_the_game")
 	interaction_button.connect("pressed",self, "_on_NPC_interaction_stage1")
 	Global.set_map(current_map)

@@ -20,9 +20,10 @@ texture = SubResource( 1 )
 region_rect = Rect2( -1, -2, 54, 82 )
 
 [node name="Light2D" type="Light2D" parent="StaticBody2D/Sprite"]
+visible = false
 texture = ExtResource( 2 )
-texture_scale = 0.5
-energy = 0.8
+texture_scale = 0.3
+energy = 0.4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 1, 19 )

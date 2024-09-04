@@ -10,15 +10,30 @@ script/source = "extends Node
 
 var master_bus = AudioServer.get_bus_index(\"Master\")
 
-
 onready var ui = $Panel
+onready var texture_button = $Panel/mute # Update the path to your TextureButton
 
 func _ready():
 	ui.hide()
 	
-func _on_TextureButton_pressed():
-	AudioServer.set_bus_mute(master_bus, not AudioServer.is_bus_mute(master_bus))
+	# Check the mute state and update the button appearance
+	if Global.mute_trigger:
+		texture_button.set_pressed(true)  # Show the unchecked sign (assuming pressed is unchecked)
+	else:
+		texture_button.set_pressed(false)  # Show the checked sign (assuming normal is checked)
 
+func _on_TextureButton_pressed():
+	# Toggle the mute state
+	AudioServer.set_bus_mute(master_bus, not AudioServer.is_bus_mute(master_bus))
+	
+	# Toggle the Global mute trigger state
+	Global.mute_trigger = not Global.mute_trigger
+	
+	# Update the button appearance based on the new state
+	if Global.mute_trigger:
+		texture_button.set_pressed(true)
+	else:
+		texture_button.set_pressed(false)
 
 func _on_close_pressed():
 	ui.hide()

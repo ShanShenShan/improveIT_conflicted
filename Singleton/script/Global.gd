@@ -14,6 +14,8 @@ var door_activated = false
 var load_game_position = false
 var from_level
 
+# Settings
+var mute_trigger = false
 
 #NPC
 var dialogue1 = false

@@ -1,26 +1,6 @@
 {
 	"events": [
 		{
-			"animation": "1-fade_in.gd",
-			"animation_length": 1,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1721952703.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": true
-			},
-			"type": 0,
-			"z_index": 0
-		},
-		{
 			"audio": "play",
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
